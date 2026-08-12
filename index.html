@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Hub — Your Next Chapter Begins Beyond Borders</title>
+  <meta name="description" content="Education Hub guides students to the right campus abroad — and represents universities, schools and pathway providers in the markets where their next students live. Recruitment, representation, partnerships.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ══════════ PRELOADER · "Now boarding" ══════════ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-mark">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="26" stroke="currentColor" stroke-width="2.5"/>
+          <ellipse cx="32" cy="32" rx="11" ry="26" stroke="currentColor" stroke-width="1.6" opacity=".55"/>
+          <path d="M6 32h52M10.5 20h43M10.5 44h43" stroke="currentColor" stroke-width="1.6" opacity=".55"/>
+        </svg>
+      </div>
+      <p class="preloader-word">NOW&nbsp;BOARDING</p>
+      <div class="preloader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ══════════ GLOBE · the connecting thread ══════════ -->
+  <canvas id="globe" aria-hidden="true"></canvas>
+  <div class="sky-blobs" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i></div>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    
+     <a href="index.html" class="nav-brand flex" aria-label="Education Hub — home">
+  <img src="assets/logo.png" alt="Education Hub" class="nav-logo">
+</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="#universities">Services</a>
+      <a href="students.html">Students</a>
+      <a href="institutions.html">Institutions</a>
+      <a href="partners.html">Partners</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#stories">Stories</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="#cta" class="btn btn-primary nav-cta magnetic">Start Your Journey
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="about.html">About</a>
+      <a href="students.html">Students</a>
+      <a href="institutions.html">Institutions</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#stories">Stories</a>
+      <a href="contact.html">Contact</a>
+      <a href="#cta" class="btn btn-primary">Start Your Journey</a>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- ══════════ 01 · DREAM — Hero: memory stack + editorial copy ══════════ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+
+        <!-- printed memories, placed one on top of another (DOM order: back → front) -->
+        <div class="memory-stack" aria-hidden="true">
+          <figure class="mem-card">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=560&q=72" alt="" width="560" height="700" loading="lazy">
+            <figcaption>Campus Life</figcaption>
+          </figure>
+          <figure class="mem-card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=560&q=72" alt="" width="560" height="700" loading="lazy">
+            <figcaption>Offer Received</figcaption>
+          </figure>
+          <figure class="mem-card">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=560&q=72" alt="" width="560" height="700" loading="lazy">
+            <figcaption>Found My People</figcaption>
+          </figure>
+          <figure class="mem-card">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=560&q=72" alt="" width="560" height="700" loading="eager">
+            <figcaption>New Beginnings</figcaption>
+          </figure>
+          <figure class="mem-card">
+            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=560&q=72" alt="" width="560" height="700" loading="eager">
+            <figcaption>Graduation Day</figcaption>
+          </figure>
+        </div>
+
+        <div class="hero-copy">
+          <h1 id="hero-title" class="hero-title">
+            <span class="line">Your next chapter</span>
+            <span class="line">begins <em class="grad-text">beyond borders</em>.</span>
+          </h1>
+          <p class="hero-sub reveal-line">We help students study abroad — admissions, scholarships and visas, handled.</p>
+          <div class="journey-builder" role="group" aria-label="Start your journey">
+            <label class="jb-label" for="jb-level">I want to study</label>
+            <span class="jb-select">
+              <select id="jb-level">
+                <option>Masters</option><option>Bachelors</option><option>MBA</option><option>PhD</option>
+              </select>
+            </span>
+            <label class="jb-label" for="jb-dest">in</label>
+            <span class="jb-select">
+              <select id="jb-dest">
+                <option>Canada</option><option>the UK</option><option>Australia</option><option>Europe</option><option>the Middle East</option>
+              </select>
+            </span>
+            <a href="#journey" class="btn btn-primary magnetic">Start Your Journey
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+            </a>
+          </div>
+          <p class="hero-trust">600+ universities&ensp;·&ensp;20+ countries&ensp;·&ensp;Free counselling</p>
+        </div>
+
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span>scroll</span><i></i></div>
+    </section>
+
+    <!-- ══════════ Trust strip · quiet credibility ══════════ -->
+    <section class="trust" aria-label="Where we work and who we support">
+      <div class="trust-inner">
+        <div class="trust-row">
+          <span class="trust-label">Working across</span>
+          <p>South Asia&ensp;·&ensp;Middle East&ensp;·&ensp;Africa</p>
+        </div>
+        <i class="trust-div" aria-hidden="true"></i>
+        <div class="trust-row">
+          <span class="trust-label">Supporting</span>
+          <p>Universities&ensp;·&ensp;Schools&ensp;·&ensp;Medical Institutions&ensp;·&ensp;Pathway Providers</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 02 · THE JOURNEY — one immersive sequence ══════════ -->
+    <section class="journey" id="journey" aria-labelledby="journey-title">
+      <div class="journey-pin">
+        <h2 id="journey-title" class="visually-hidden">Your journey, stage by stage</h2>
+
+        <svg class="flight-svg" viewBox="0 0 1440 780" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <path id="flightPath" class="flight-path" d="M-60,640 C240,560 320,300 560,330 S880,560 1080,420 S1320,120 1520,90" fill="none"/>
+        </svg>
+        <div class="plane" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M44 24c0-1.5-1.2-2.6-2.7-2.6l-12.9.1L16.9 6.9c-.4-.5-1-.9-1.7-.9h-2.7c-.7 0-1.2.7-1 1.4l4.6 14.2-9.6.1-3.8-4.7c-.3-.4-.8-.7-1.4-.7H0l2.9 7.7L0 31.7h1.3c.6 0 1.1-.3 1.4-.7l3.8-4.7 9.6.1-4.6 14.2c-.2.7.3 1.4 1 1.4h2.7c.7 0 1.3-.4 1.7-.9l11.5-14.6 12.9.1c1.5 0 2.7-1.1 2.7-2.6z" fill="currentColor"/></svg>
+        </div>
+
+        <p class="journey-kicker" aria-hidden="true">The journey</p>
+        <div class="journey-hud" aria-hidden="true"><span class="j-now">01</span><em>/</em><span>09</span></div>
+
+        <div class="stages">
+          <article class="stage is-active">
+            <span class="stage-num">01</span>
+            <h3>Dream</h3>
+            <p>It starts with a maybe.</p>
+          </article>
+          <article class="stage">
+            <span class="stage-num">02</span>
+            <h3>Choose your destination</h3>
+            <p>20+ countries. One will feel like home.</p>
+          </article>
+          <article class="stage">
+            <span class="stage-num">03</span>
+            <h3>Find your university</h3>
+            <p>600+ options, shortlisted down to <em>yours</em>.</p>
+          </article>
+          <article class="stage">
+            <span class="stage-num">04</span>
+            <h3>Apply</h3>
+            <p>We handle the paperwork. You keep dreaming.</p>
+          </article>
+          <article class="stage">
+            <span class="stage-num">05</span>
+            <h3>The offer letter</h3>
+            <p>The email that changes everything.</p>
+          </article>
+          <article class="stage">
+            <span class="stage-num">06</span>
+            <h3>Visa</h3>
+            <p>Stamped. Sorted. Stress-free.</p>
+          </article>
+          <article class="stage">
+            <span class="stage-num">07</span>
+            <h3>Take off</h3>
+            <p>Window seat to your future.</p>
+          </article>
+          <article class="stage">
+            <span class="stage-num">08</span>
+            <h3>Graduate</h3>
+            <p>The cap. The gown. The photo they’ll frame.</p>
+          </article>
+          <article class="stage">
+            <span class="stage-num">09</span>
+            <h3>Career</h3>
+            <p>Your story is just getting started.</p>
+          </article>
+        </div>
+
+        <div class="journey-bar" aria-hidden="true"><span class="journey-progress"></span></div>
+      </div>
+    </section>
+
+    <!-- ══════════ 03 · DESTINATIONS — photo rail ══════════ -->
+    <section class="destinations" id="destinations" aria-labelledby="dest-title">
+      <header class="section-head head-split">
+        <div>
+          <p class="kicker">Where will you go first?</p>
+          <h2 id="dest-title" class="h2">Find the place<br>you’ll call <span class="grad-text">home.</span></h2>
+        </div>
+        <div class="rail-nav" aria-hidden="false">
+          <button class="rail-btn rail-prev" aria-label="Previous destinations"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg></button>
+          <button class="rail-btn rail-next" aria-label="More destinations"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></button>
+        </div>
+      </header>
+      <div class="rail" tabindex="0" role="region" aria-label="Study destinations — scroll horizontally">
+        <a href="#" class="dest-card">
+          <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=680&q=70" alt="Tower Bridge, London" width="680" height="900" loading="lazy">
+          <div class="dest-meta"><h3>United Kingdom</h3><p>1-year masters. Big city energy.</p></div>
+        </a>
+        <a href="#" class="dest-card">
+          <img src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=680&q=70" alt="Toronto skyline at dusk" width="680" height="900" loading="lazy">
+          <div class="dest-meta"><h3>Canada</h3><p>Work while you study.</p></div>
+        </a>
+        <a href="#" class="dest-card">
+          <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=680&q=70" alt="Sydney Opera House" width="680" height="900" loading="lazy">
+          <div class="dest-meta"><h3>Australia</h3><p>Degrees with a beach view.</p></div>
+        </a>
+        <a href="#" class="dest-card">
+          <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=680&q=70" alt="Brandenburg Gate, Berlin" width="680" height="900" loading="lazy">
+          <div class="dest-meta"><h3>Europe</h3><p>World-class. Often tuition-free.</p></div>
+        </a>
+        <a href="#" class="dest-card">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=680&q=70" alt="Dubai skyline" width="680" height="900" loading="lazy">
+          <div class="dest-meta"><h3>Middle East</h3><p>The future, two time zones away.</p></div>
+        </a>
+        <a href="#" class="dest-card dest-more">
+          <div class="dest-more-inner">
+            <h3>Every destination</h3>
+            <p>Explore where we work</p>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════ 04 · FOR STUDENTS — image right ══════════ -->
+    <section class="split" id="students" aria-labelledby="students-title">
+      <div class="split-grid">
+        <div class="split-copy">
+          <p class="kicker">Why Education Hub</p>
+          <h2 id="students-title" class="h2">We’ve got you.<br><span class="grad-text">Every step.</span></h2>
+          <p class="split-sub">From “where do I even start?” to boarding pass in hand.</p>
+          <ul class="chip-list">
+            <li>Find the right university</li>
+            <li>Scholarship guidance</li>
+            <li>Application support</li>
+            <li>Visa assistance</li>
+            <li>Support beyond admission</li>
+          </ul>
+          <a href="#" class="btn btn-primary magnetic">Explore your future
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+          </a>
+        </div>
+        <div class="split-media">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=70" alt="Students working together on a laptop, laughing" width="900" height="700" loading="lazy">
+          <div class="media-card mc-offer" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+            <div><b>Offer received!</b><p>MSc Data Science · London</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 05 · INSTITUTIONS — one quiet, credible moment ══════════ -->
+    <section class="cred" id="universities" aria-labelledby="uni-title">
+      <p class="kicker">For institutions</p>
+      <h2 id="uni-title" class="h2">Trusted by universities.<br><span class="grad-text">Chosen by students.</span></h2>
+      <p class="cred-sub">Recruitment, representation and partnerships — on the ground in the markets where your next students live.</p>
+      <a href="#" class="btn btn-ghost magnetic">For Institutions
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+      </a>
+    </section>
+
+    <!-- ══════════ 06 · SCHOLARSHIPS — full-bleed gradient band ══════════ -->
+    <section class="band" id="scholarships" aria-labelledby="band-title">
+      <div class="band-inner">
+        <p class="kicker kicker-light">Scholarships</p>
+        <h2 id="band-title" class="band-title">Dream bigger.<br>Pay less.</h2>
+        <div class="band-stats">
+          <div class="num-card"><span class="num" data-count="600" data-suffix="+">0</span><p>partner universities</p></div>
+          <div class="num-card"><span class="num" data-count="20" data-suffix="+">0</span><p>countries</p></div>
+          <div class="num-card"><span class="num" data-count="10" data-suffix="k+">0</span><p>dreams boarded</p></div>
+          <div class="num-card"><span class="num" data-count="95" data-suffix="%">0</span><p>visa success</p></div>
+        </div>
+        <a href="#" class="btn btn-light btn-lg magnetic">Find your scholarship
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════ 07 · STORIES ══════════ -->
+    <section class="stories" id="stories" aria-labelledby="stories-title">
+      <header class="section-head">
+        <p class="kicker">Proof, in first person</p>
+        <h2 id="stories-title" class="h2">They were <span class="grad-text">here.</span><br>Now they’re there.</h2>
+      </header>
+      <div class="stories-row">
+        <article class="story-card tilt">
+          <div class="story-route" aria-hidden="true"><span>MUM</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M2 12h20m0 0l-6-6m6 6l-6 6"/></svg><span>LDN</span></div>
+          <blockquote>“I thought studying abroad was for other people. Turns out it was for me.”</blockquote>
+          <footer>
+            <div class="avatar av-1"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=70" alt="Ayesha K." width="160" height="160" loading="lazy"></div>
+            <div><b>Ayesha K.</b><p>MSc Data Science · UCL, London</p><p class="story-now">Now a data analyst in London</p></div>
+          </footer>
+        </article>
+        <article class="story-card tilt">
+          <div class="story-route" aria-hidden="true"><span>DXB</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M2 12h20m0 0l-6-6m6 6l-6 6"/></svg><span>TOR</span></div>
+          <blockquote>“From first call to first snowfall in seven months.”</blockquote>
+          <footer>
+            <div class="avatar av-2"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=70" alt="Rahul S." width="160" height="160" loading="lazy"></div>
+            <div><b>Rahul S.</b><p>BBA · York University, Toronto</p><p class="story-now">Now interning in product, Toronto</p></div>
+          </footer>
+        </article>
+        <article class="story-card tilt">
+          <div class="story-route" aria-hidden="true"><span>LHE</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M2 12h20m0 0l-6-6m6 6l-6 6"/></svg><span>SYD</span></div>
+          <blockquote>“The scholarship I didn’t know existed paid for the year I’ll never forget.”</blockquote>
+          <footer>
+            <div class="avatar av-3"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=160&q=70" alt="Zara M." width="160" height="160" loading="lazy"></div>
+            <div><b>Zara M.</b><p>MEng · UNSW, Sydney</p><p class="story-now">Now a graduate engineer, Sydney</p></div>
+          </footer>
+        </article>
+      </div>
+      <a href="#" class="link-more magnetic">All success stories
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+      </a>
+    </section>
+
+    <!-- ══════════ 08 · CAMPUS LIFE — photo strip ══════════ -->
+    <section class="life" id="life" aria-labelledby="life-title">
+      <header class="section-head head-center">
+        <p class="kicker">Campus life</p>
+        <h2 id="life-title" class="h2">Your people are<br>already <span class="grad-text">out there.</span></h2>
+      </header>
+      <div class="life-strip" aria-hidden="true">
+        <div class="life-track">
+          <figure><img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>the library all-nighter</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>group project, night 3</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>we actually did it</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>semester break, booked</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>flatmates → family</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>new city, who dis</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>the library all-nighter</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>group project, night 3</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>we actually did it</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>semester break, booked</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>flatmates → family</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=640&q=70" alt="" loading="lazy"><figcaption>new city, who dis</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 09 · FINAL CTA ══════════ -->
+    <section class="cta" id="cta" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="cta-title">
+        <span class="line">The hardest part</span>
+        <span class="line">isn’t studying abroad.</span>
+        <span class="line accent">It’s deciding to begin.</span>
+      </h2>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary btn-xl magnetic">Start Your Journey
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+        </a>
+        <p class="cta-note">Free counselling · No spam · Real humans</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-brand footer-logo" aria-label="Education Hub — home">
+          <img src="assets/logo.png" alt="Education Hub" class="nav-logo">
+        </a>
+        <p class="footer-tagline">Your world. Your education. Our promise.</p>
+      </div>
+      <nav class="footer-cols" aria-label="Footer">
+        <div><h4>Journeys</h4><a href="students.html">Students</a><a href="#">Institutions</a><a href="#">Destinations</a><a href="#">Scholarships</a></div>
+        <div><h4>Company</h4><a href="#">About</a><a href="#">Services</a><a href="#">Leadership</a><a href="partners.html">Exclusive Partners</a><a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a><a href="#">Success Stories</a></div>
+        <div><h4>Say hi</h4><a href="mailto:hello@educationhub.com">hello@educationhub.com</a><a href="#">Contact</a></div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Education Hub. Made for the ones who won’t stay put.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
