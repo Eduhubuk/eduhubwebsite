@@ -49,5 +49,21 @@ Primary nav + mobile menu on every page: About · Students · Institutions · Pa
 14. **A tween created inside a timeline `.add()` callback is not part of that timeline** — the timeline's `onComplete` fires while it is still running. Anything that must happen after such a tween (releasing an animated height back to `auto`) belongs on that tween's own `onComplete`.
 15. Brochures are the real client PDFs in `brochures/`, linked root-relative (`/brochures/arkangel-brochur.pdf`, `/brochures/laat-brochure.pdf`) with `download` — root-relative means the site must be served from a domain root, not a subdirectory. Photos are Unsplash placeholders (all current URLs verified loading; `photo-1523050854058` is DEAD, don't reuse). Logo: `assets/logo.png` (user-provided, in nav at 34px).
 
+
+## Final change list — implemented (this session, 2026-08-12)
+
+The 30-point client change list is done except email sending (explicitly deferred by the client until the site moves to their hosting — forms still build a `mailto:`; routing/labels come from data-attributes on each `<form>`).
+
+**New pages:** `courses-ug.html`, `courses-pg.html`, `short-courses.html`, `course.html` (detail via `#slug` hash), `contact-students.html`, `contact-institutions.html`, `contact-partners.html`.
+**New JS:** `js/nav.js` (dropdowns, all pages), `js/courses.js` + `js/courses-data.js` (LAAT-extracted, edit the data file to update courses), `js/destinations-data.js` (7-section destination guides; accordion logic appended to `js/main.js`).
+**Nav:** Home · About · Courses▾ · Institutions · Exc Partners · Contact▾ on all 14 pages (desktop + mobile groups + footer). Gallery de-linked everywhere and `noindex`ed; component untouched. Students page remains, linked from the footer only.
+**Routing:** student + channel-partner forms → pbhatia@; institution forms → partnerships@. Apply Now everywhere → `contact-students.html#course=<name>` (hash, NOT query — `npx serve`'s clean-URL redirect drops query strings).
+**Claim:** 100+ universities · 20+ countries (client-final; also stats band + journey stage 03). Testimonials retained per client.
+**Logo:** nav/footer now use `assets/logo-nav.png` (trimmed crop of logo.png, which had 42% transparent padding) at 44px/34px.
+**Type scale:** `--step-0…4` and all hardcoded heading clamps reduced ~15–20% at the top end — do not "restore" them from old muscle memory.
+**Marquee:** official partner logos in `assets/partners/logos/` (sources logged in DESIGN-SYSTEM.md Chapter Nine). Anglia Ruskin's mark is officially yellow-on-dark only → navy chip. Images must stay eager-loaded (lazy never fires while the pane is hidden).
+**Client flags still open:** ARU dark-tile treatment (or request brand pack); "SP Jain London" sourced from spjain.org — confirm the client means SP Jain School of Global Management, not the separate SP Jain London School of Management; "PMU – UK" interpreted as Plymouth Marjon University; partner commission figures are displayed publicly on short-courses per the client's instruction — confirm they want that public.
+**Preloader gotcha (new):** on index, when the pane backgrounds itself the preloader freezes at opacity 1 and every screenshot is pure white — advance `gsap.globalTimeline.time(+15)` or verify via DOM.
+
 ## Where the record lives
 `DESIGN-SYSTEM.md` — every iteration logged with what/why/verification. Keep appending.

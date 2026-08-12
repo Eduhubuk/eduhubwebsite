@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Education Hub · Let’s Start Your Global Journey</title>
-  <meta name="description" content="Talk to Education Hub — whether you are a student, a parent or an institution. UK-based, working across South Asia, the Middle East and Africa. We typically respond within one business day.">
+  <title>For Students — Contact Education Hub · Start Your Study Abroad Journey</title>
+  <meta name="description" content="Applying to a course or just starting to explore? Talk to Education Hub's counsellors about universities, applications, scholarships and visas. We typically respond within one business day.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
         </button>
         <div class="nav-drop">
           <a href="contact-institutions.html">For Institutions</a>
-          <a href="contact-students.html">For Students</a>
+          <a href="contact-students.html" aria-current="page">For Students</a>
           <a href="contact-partners.html">For Channel Partners</a>
         </div>
       </div>
@@ -86,10 +86,10 @@
       <i class="amb amb-4" aria-hidden="true"></i>
 
       <h1 id="c-hero-title" class="c-hero-title">
-        <span class="line">Let’s start your</span>
-        <span class="line"><em class="grad-text">global journey</em>.</span>
+        <span class="line">Let’s find your</span>
+        <span class="line"><em class="grad-text">place in the world</em>.</span>
       </h1>
-      <p class="c-hero-sub">Whether you’re a student, a parent or an institution — we’d be delighted to hear from you.</p>
+      <p class="c-hero-sub">Applying to a course, or just starting to explore — tell us, and a counsellor will come back to you.</p>
     </section>
 
     <!-- ══════════ 2 · CONTACT EXPERIENCE ══════════ -->
@@ -105,9 +105,9 @@
 
           <form class="c-form" id="inquiry" novalidate
                 data-recipient="pbhatia@edu-hub.org.uk"
-                data-enquiry="General enquiry"
-                data-subject="Website enquiry"
-                data-source="General Contact Page">
+                data-enquiry="Student enquiry"
+                data-subject="Student enquiry"
+                data-source="Student Contact Page">
             <div class="field">
               <input type="text" id="f-name" name="name" placeholder=" " autocomplete="name" required>
               <label for="f-name">Full name</label>
@@ -131,16 +131,9 @@
               </div>
             </div>
 
-            <div class="field field-select">
-              <select id="f-role" name="role" required>
-                <option value="" selected disabled hidden></option>
-                <option>Student</option>
-                <option>Parent</option>
-                <option>Institution</option>
-              </select>
-              <label for="f-role">I am a…</label>
-              <svg class="field-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
-              <p class="field-error" data-error-for="f-role">Please choose one.</p>
+            <div class="field">
+              <input type="text" id="f-course" name="course" placeholder=" ">
+              <label for="f-course">Course / programme of interest</label>
             </div>
 
             <div class="field field-area">

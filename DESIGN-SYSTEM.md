@@ -1,5 +1,26 @@
 # EDUCATION HUB · "DAYLIGHT" — Creative Direction & Design System (Iteration 3 · pre-launch refinement)
 
+## Chapter Nine — the final client change list (site-wide)
+
+One session, thirty items. Nothing was redesigned; everything new was assembled from the approved system.
+
+**Navigation.** The primary nav became six items — Home · About · Courses · Institutions · Exc Partners · Contact — with two glass dropdowns (Courses → U.G / P.G / Short Courses; Contact → For Institutions / For Students / For Channel Partners). Desktop dropdowns open on hover (with a hover-bridge pseudo-element) and on click/touch via the new shared `js/nav.js` (aria-expanded, Escape, outside-click). The mobile menu gained `.mm-group` clusters with kicker-style labels; on screens under 700px tall it scrolls instead of clipping. Services / Gallery / Stories left the primary nav; the footer gained a Courses column and lost its dead links. Applied per region (nav / mobile menu / footer) across all 14 pages by script, with per-region count verification, per the Chapter-Five bulk-edit lesson.
+
+**Courses.** New `js/courses-data.js` (single source of truth, extracted from laat.ac.uk on 2026-08-12 — no runtime dependency) + `js/courses.js` render three listing pages (`courses-ug/pg/short-courses.html`) and a detail page (`course.html`). Cards: awarding-body badge, name, meta rows (only stated facts — nulls never render), one-sentence overview, View course + Apply Now. Detail: overview / entry requirements / per-stage module tables + a sticky key-facts panel. The Plymouth Marjon short-course terms (GBP 250 per learner, batches 5–25, Jan/Apr/Jul/Oct, GBP 50 commission) and the NCFE CACHE SENCo award (GBP 450 / GBP 100) are client-supplied verbatim; NCFE gets a violet-accented chip to keep awarding bodies visually distinct. **Gotcha:** course hand-off uses the URL hash (`course.html#slug`, `contact-students.html#course=Name`) — `npx serve`'s clean-URL redirect silently drops query strings, and the hash survives any redirect.
+
+**Contact.** `contact.html` was cloned into three audience pages differing only in hero copy, one extra field and routing. `js/contact.js` is now config-driven from form data-attributes (`data-recipient/enquiry/subject/source`); the mailto body gained Enquiry type / Source / Submitted lines and only prints fields that exist. `#course=` pre-fills the course field and becomes the Source. Email sending stays mailto by explicit client decision — deferred until the site moves to their hosting.
+
+**Home.** Destination rail cards became buttons that expand a glass guide panel (`#dest-detail`) with the fixed 7-section accordion (Life / Why Study / Benefits / Eligibility / Documents / Visa / Cost) from `js/destinations-data.js` — original copy, key facts checked against gov.uk, IRCC, homeaffairs.gov.au, ind.nl, campusfrance.org, irishimmigration.ie. Every open/close ends in `ScrollTrigger.refresh()` on the tween's own onComplete (Chapter-Seven height lesson + the pinned journey lives above). The partner logo marquee reuses `.marquee/.marquee-track` with 68px glass chips — ten official institution marks, duplicated for a seamless loop, eager-loaded (lazy images never load while `document.hidden`). Anglia Ruskin publishes its mark for dark backgrounds only, so its chip is navy. Claim updated to **100+ universities · 20+ countries** (hero, stage 03, stats band — client-supplied number).
+
+**Institutions.** New `regions-why` section (six `.panel` cards, `.iw-*`) between Markets and Models — original copy on demand, mobility, access, counselling, market fluency and fit; no invented statistics. Cards joined the page's existing reveal selector.
+
+**Type & logo.** The fluid scale came down ~15–20% at the display end (`--step-0…4` plus every hardcoded heading clamp, the About counters, and button sizes) — same fonts, same weights. The nav logo's real problem was the asset: `logo.png` is 1536×1024 with the artwork occupying only 58% of the height. `assets/logo-nav.png` is the trimmed crop, rendered at 44px (34px under 900px).
+
+**Elsewhere.** WhatsApp FAB (+971 56 2022 750, wa.me link, z-index 80 under the mobile menu) on every public page; Gallery de-linked everywhere + `noindex` (code untouched); testimonials retained per client instruction.
+
+**Verification.** Desktop 1280 and mobile 375: all pages console-clean, no horizontal overflow; dropdowns, accordions (panel 871px / visa 213px via DOM), Apply-Now→prefill chain, brochures (206 application/pdf) all confirmed. Mid-page screenshots in the backgrounded pane stay blank — the index preloader freezes at opacity 1 when rAF stops; DOM state is the oracle, as documented.
+
+
 ## Chapter Eight — the Partners university profile (partners.html)
 
 The hero and the two selector cards are untouched; everything new sits below them. The cards now double as the navigation.

@@ -290,7 +290,7 @@ if (!prefersReduced && isDesktop) {
 
 /* ── reveals — unhurried ── */
 if (!prefersReduced) {
-  gsap.utils.toArray(".section-head, .markets-sticky, .model").forEach((el) => {
+  gsap.utils.toArray(".section-head, .markets-sticky, .model, .iw-card").forEach((el) => {
     gsap.from(el, {
       opacity: 0, y: 30, duration: 0.9, ease: "power3.out",
       scrollTrigger: { trigger: el, start: "top 86%", toggleActions: "play none none none" },

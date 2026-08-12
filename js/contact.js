@@ -76,6 +76,17 @@ if (!prefersReduced) {
   if (!form) return;
   const status = form.querySelector(".c-form-status");
 
+  /* Apply Now hand-off: ?course=<name> pre-fills the course field and
+     becomes the enquiry's Source line. */
+  const courseParam = new URLSearchParams(location.search).get("course") ||
+    new URLSearchParams(location.hash.replace(/^#/, "")).get("course");
+  if (courseParam && form.elements.course) {
+    form.elements.course.value = courseParam;
+    const field = form.elements.course.closest(".field");
+    if (field) field.classList.add("has-value");
+    form.dataset.source = courseParam;
+  }
+
   /* the two columns arrive, then the fields ladder in */
   revealOnce(".c-form-card", { opacity: 0, y: 42 },
     { opacity: 1, y: 0, duration: 1, ease: "power3.out" }, document.querySelector(".contact-grid"));
@@ -137,22 +148,35 @@ if (!prefersReduced) {
     }
 
     /* No backend on a static site: hand the note to the approved inbox.
-       Replace this with a real form endpoint when one exists. */
+       Replace this with a real form endpoint when one exists (email sending
+       is explicitly deferred until the site moves to the client's hosting).
+       Routing/labels come from data attributes on the <form>:
+       data-recipient · data-enquiry · data-subject · data-source */
     const get = (n) => (form.elements[n] ? form.elements[n].value.trim() : "");
+    const recipient = form.dataset.recipient || "pbhatia@edu-hub.org.uk";
+    const line = (label, name) =>
+      form.elements[name] ? `${label}: ${get(name) || "—"}` : null;
     const body = [
-      `Name: ${get("name")}`,
-      `Email: ${get("email")}`,
-      `Phone: ${get("phone") || "—"}`,
-      `Country: ${get("country") || "—"}`,
-      `I am a: ${get("role")}`,
+      `Enquiry type: ${form.dataset.enquiry || "General enquiry"}`,
+      line("Name", "name"),
+      line("Email", "email"),
+      line("Phone", "phone"),
+      line("Country", "country"),
+      line("I am a", "role"),
+      line("Institution", "institution"),
+      line("Organisation", "organisation"),
+      line("Course / programme", "course"),
       "",
       get("message"),
-    ].join("\n");
+      "",
+      `Source: ${form.dataset.source || "Website Contact Page"}`,
+      `Submitted: ${new Date().toUTCString()}`,
+    ].filter((v) => v !== null).join("\n");
 
     status.classList.remove("is-error");
     status.textContent = "Opening your email app so you can send this to us…";
     window.location.href =
-      `mailto:pbhatia@edu-hub.org.uk?subject=${encodeURIComponent("Website enquiry — " + get("name"))}` +
+      `mailto:${recipient}?subject=${encodeURIComponent((form.dataset.subject || "Website enquiry") + " — " + get("name"))}` +
       `&body=${encodeURIComponent(body)}`;
 
     if (!prefersReduced) {

@@ -651,3 +651,121 @@ if (window.matchMedia("(pointer: fine)").matches && !prefersReduced) {
 
 /* refresh triggers once fonts/images settle */
 window.addEventListener("load", () => ScrollTrigger.refresh());
+
+/* ═════════ DESTINATION GUIDES — cards expand into a 7-section accordion ═════════
+   Content lives in js/destinations-data.js. Every open/close changes page
+   height below the pinned journey, so ScrollTrigger.refresh() follows each
+   height tween (on the tween's own onComplete — see HANDOFF gotchas). */
+(() => {
+  const DESTS = window.EDUHUB_DESTINATIONS || {};
+  const detail = document.getElementById("dest-detail");
+  const cards = gsap.utils.toArray(".dest-card[data-dest]");
+  if (!detail || !cards.length) return;
+
+  const titleEl = detail.querySelector(".dd-title");
+  const accEl = detail.querySelector(".dd-acc");
+  const closeBtn = detail.querySelector(".dd-close");
+  let openSlug = null;
+
+  const esc = (s) => String(s)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+  function buildAcc(dest) {
+    titleEl.textContent = dest.title;
+    accEl.innerHTML = dest.sections.map((s, i) => `
+      <div class="dd-item">
+        <h4>
+          <button type="button" class="dd-q" aria-expanded="false" aria-controls="dd-p${i}" id="dd-b${i}">
+            <span>${esc(s.heading)}</span>
+            <svg class="dd-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+        </h4>
+        <div class="dd-a" id="dd-p${i}" role="region" aria-labelledby="dd-b${i}">
+          <div class="dd-a-inner">
+            ${s.intro ? `<p>${esc(s.intro)}</p>` : ""}
+            <ul>${s.bullets.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+          </div>
+        </div>
+      </div>`).join("");
+
+    const items = gsap.utils.toArray(accEl.querySelectorAll(".dd-item"));
+    items.forEach((item) => {
+      const btn = item.querySelector(".dd-q");
+      const panel = item.querySelector(".dd-a");
+      gsap.set(panel, { height: 0, opacity: 0 });
+      btn.addEventListener("click", () => {
+        const willOpen = btn.getAttribute("aria-expanded") !== "true";
+        items.forEach((other) => {
+          if (other === item) return;
+          const ob = other.querySelector(".dd-q");
+          if (ob.getAttribute("aria-expanded") === "true") {
+            ob.setAttribute("aria-expanded", "false");
+            other.classList.remove("is-open");
+            gsap.to(other.querySelector(".dd-a"), {
+              height: 0, opacity: 0, duration: 0.4, ease: "power2.inOut", overwrite: true,
+              onComplete: () => ScrollTrigger.refresh(),
+            });
+          }
+        });
+        btn.setAttribute("aria-expanded", String(willOpen));
+        item.classList.toggle("is-open", willOpen);
+        if (prefersReduced) {
+          gsap.set(panel, { height: willOpen ? "auto" : 0, opacity: willOpen ? 1 : 0 });
+          ScrollTrigger.refresh();
+          return;
+        }
+        gsap.to(panel, {
+          height: willOpen ? "auto" : 0, opacity: willOpen ? 1 : 0,
+          duration: willOpen ? 0.55 : 0.4,
+          ease: willOpen ? "power3.out" : "power2.inOut", overwrite: true,
+          onComplete: () => ScrollTrigger.refresh(),
+        });
+      });
+    });
+  }
+
+  const setCardState = (slug) =>
+    cards.forEach((c) => c.setAttribute("aria-expanded", String(c.dataset.dest === slug)));
+
+  function openDetail(slug) {
+    const dest = DESTS[slug];
+    if (!dest) return;
+    buildAcc(dest);
+    openSlug = slug;
+    setCardState(slug);
+    detail.hidden = false;
+    if (prefersReduced) { ScrollTrigger.refresh(); return; }
+    gsap.fromTo(detail, { height: 0, opacity: 0 }, {
+      height: "auto", opacity: 1, duration: 0.6, ease: "power3.out",
+      onComplete: () => { gsap.set(detail, { clearProps: "height" }); ScrollTrigger.refresh(); },
+    });
+  }
+
+  function closeDetail() {
+    openSlug = null;
+    setCardState(null);
+    if (prefersReduced) { detail.hidden = true; ScrollTrigger.refresh(); return; }
+    gsap.to(detail, {
+      height: 0, opacity: 0, duration: 0.45, ease: "power2.inOut",
+      onComplete: () => {
+        detail.hidden = true;
+        gsap.set(detail, { clearProps: "height,opacity" });
+        ScrollTrigger.refresh();
+      },
+    });
+  }
+
+  cards.forEach((card) => card.addEventListener("click", () => {
+    const slug = card.dataset.dest;
+    if (openSlug === slug) { closeDetail(); return; }
+    if (openSlug) {
+      buildAcc(DESTS[slug]);
+      openSlug = slug;
+      setCardState(slug);
+      ScrollTrigger.refresh();
+      return;
+    }
+    openDetail(slug);
+  }));
+  closeBtn.addEventListener("click", closeDetail);
+})();

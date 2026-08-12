@@ -38,17 +38,33 @@
   <header class="nav" id="nav">
     
      <a href="index.html" class="nav-brand flex" aria-label="Education Hub — home">
-  <img src="assets/logo.png" alt="Education Hub" class="nav-logo">
+  <img src="assets/logo-nav.png" alt="Education Hub" class="nav-logo">
 </a>
     <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
       <a href="about.html">About</a>
-      <a href="#universities">Services</a>
-      <a href="students.html">Students</a>
+      <div class="nav-item">
+        <button type="button" class="nav-drop-trigger" aria-expanded="false" aria-haspopup="true">Courses
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+        </button>
+        <div class="nav-drop">
+          <a href="courses-ug.html">U.G</a>
+          <a href="courses-pg.html">P.G</a>
+          <a href="short-courses.html">Short Courses</a>
+        </div>
+      </div>
       <a href="institutions.html">Institutions</a>
-      <a href="partners.html">Partners</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="#stories">Stories</a>
-      <a href="contact.html">Contact</a>
+      <a href="partners.html">Exc Partners</a>
+      <div class="nav-item">
+        <button type="button" class="nav-drop-trigger" aria-expanded="false" aria-haspopup="true">Contact
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+        </button>
+        <div class="nav-drop">
+          <a href="contact-institutions.html">For Institutions</a>
+          <a href="contact-students.html">For Students</a>
+          <a href="contact-partners.html">For Channel Partners</a>
+        </div>
+      </div>
     </nav>
     <a href="#cta" class="btn btn-primary nav-cta magnetic">Start Your Journey
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
@@ -58,12 +74,22 @@
 
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <nav aria-label="Mobile">
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="students.html">Students</a>
+      <div class="mm-group">
+        <p class="mm-label">Courses</p>
+        <a href="courses-ug.html">U.G</a>
+        <a href="courses-pg.html">P.G</a>
+        <a href="short-courses.html">Short Courses</a>
+      </div>
       <a href="institutions.html">Institutions</a>
-      <a href="#destinations">Destinations</a>
-      <a href="#stories">Stories</a>
-      <a href="contact.html">Contact</a>
+      <a href="partners.html">Exc Partners</a>
+      <div class="mm-group">
+        <p class="mm-label">Contact</p>
+        <a href="contact-institutions.html">For Institutions</a>
+        <a href="contact-students.html">For Students</a>
+        <a href="contact-partners.html">For Channel Partners</a>
+      </div>
       <a href="#cta" class="btn btn-primary">Start Your Journey</a>
     </nav>
   </div>
@@ -121,7 +147,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
             </a>
           </div>
-          <p class="hero-trust">600+ universities&ensp;·&ensp;20+ countries&ensp;·&ensp;Free counselling</p>
+          <p class="hero-trust">100+ universities&ensp;·&ensp;20+ countries&ensp;·&ensp;Free counselling</p>
         </div>
 
       </div>
@@ -172,7 +198,7 @@
           <article class="stage">
             <span class="stage-num">03</span>
             <h3>Find your university</h3>
-            <p>600+ options, shortlisted down to <em>yours</em>.</p>
+            <p>100+ options, shortlisted down to <em>yours</em>.</p>
           </article>
           <article class="stage">
             <span class="stage-num">04</span>
@@ -223,33 +249,51 @@
         </div>
       </header>
       <div class="rail" tabindex="0" role="region" aria-label="Study destinations — scroll horizontally">
-        <a href="#" class="dest-card">
+        <button type="button" class="dest-card" data-dest="united-kingdom" aria-expanded="false" aria-controls="dest-detail">
           <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=680&q=70" alt="Tower Bridge, London" width="680" height="900" loading="lazy">
           <div class="dest-meta"><h3>United Kingdom</h3><p>1-year masters. Big city energy.</p></div>
-        </a>
-        <a href="#" class="dest-card">
+        </button>
+        <button type="button" class="dest-card" data-dest="canada" aria-expanded="false" aria-controls="dest-detail">
           <img src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=680&q=70" alt="Toronto skyline at dusk" width="680" height="900" loading="lazy">
           <div class="dest-meta"><h3>Canada</h3><p>Work while you study.</p></div>
-        </a>
-        <a href="#" class="dest-card">
+        </button>
+        <button type="button" class="dest-card" data-dest="australia" aria-expanded="false" aria-controls="dest-detail">
           <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=680&q=70" alt="Sydney Opera House" width="680" height="900" loading="lazy">
           <div class="dest-meta"><h3>Australia</h3><p>Degrees with a beach view.</p></div>
-        </a>
-        <a href="#" class="dest-card">
+        </button>
+        <button type="button" class="dest-card" data-dest="europe" aria-expanded="false" aria-controls="dest-detail">
           <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=680&q=70" alt="Brandenburg Gate, Berlin" width="680" height="900" loading="lazy">
           <div class="dest-meta"><h3>Europe</h3><p>World-class. Often tuition-free.</p></div>
-        </a>
-        <a href="#" class="dest-card">
+        </button>
+        <button type="button" class="dest-card" data-dest="middle-east" aria-expanded="false" aria-controls="dest-detail">
           <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=680&q=70" alt="Dubai skyline" width="680" height="900" loading="lazy">
           <div class="dest-meta"><h3>Middle East</h3><p>The future, two time zones away.</p></div>
-        </a>
-        <a href="#" class="dest-card dest-more">
+        </button>
+        <a href="contact-students.html" class="dest-card dest-more">
           <div class="dest-more-inner">
             <h3>Every destination</h3>
             <p>Explore where we work</p>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
           </div>
         </a>
+      </div>
+
+      <!-- expanding destination guide — populated from js/destinations-data.js -->
+      <div class="dest-detail" id="dest-detail" hidden>
+        <div class="dest-detail-inner">
+          <header class="dd-head">
+            <h3 class="dd-title"></h3>
+            <button type="button" class="dd-close" aria-label="Close destination details">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+          </header>
+          <div class="dd-acc"></div>
+          <div class="dd-cta-row">
+            <a class="btn btn-primary magnetic" href="contact-students.html">Plan my journey
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -291,13 +335,43 @@
       </a>
     </section>
 
+
+    <!-- ══════════ Partner logo marquee — official institution marks ══════════ -->
+    <section class="partners-marquee" aria-label="Partner universities and institutions">
+      <p class="pm-label">Our partner institutions</p>
+      <div class="marquee">
+        <div class="marquee-track m-logos">
+          <span class="m-logo"><img src="assets/partners/logos/sp-jain-london.png" alt="SP Jain School of Global Management, London"></span>
+          <span class="m-logo"><img src="assets/partners/logos/aivancity-paris.png" alt="Aivancity School, Paris"></span>
+          <span class="m-logo"><img src="assets/partners/logos/laat-uk.jpg" alt="LAAT, UK"></span>
+          <span class="m-logo"><img src="assets/partners/logos/plymouth-marjon-university.svg" alt="Plymouth Marjon University, UK"></span>
+          <span class="m-logo"><img src="assets/partners/logos/arkangel-university.png" alt="ArkAngel University School of Medicine"></span>
+          <span class="m-logo on-dark"><img src="assets/partners/logos/anglia-ruskin-university.svg" alt="Anglia Ruskin University, UK"></span>
+          <span class="m-logo"><img src="assets/partners/logos/arden-university.svg" alt="Arden University, UK"></span>
+          <span class="m-logo"><img src="assets/partners/logos/bsbi-germany.png" alt="Berlin School of Business and Innovation, Germany"></span>
+          <span class="m-logo"><img src="assets/partners/logos/de-montfort-university.svg" alt="De Montfort University, Leicester"></span>
+          <span class="m-logo"><img src="assets/partners/logos/university-of-gloucestershire.svg" alt="University of Gloucestershire, UK"></span>
+          <span class="m-logo"><img src="assets/partners/logos/sp-jain-london.png" alt=""></span>
+          <span class="m-logo"><img src="assets/partners/logos/aivancity-paris.png" alt=""></span>
+          <span class="m-logo"><img src="assets/partners/logos/laat-uk.jpg" alt=""></span>
+          <span class="m-logo"><img src="assets/partners/logos/plymouth-marjon-university.svg" alt=""></span>
+          <span class="m-logo"><img src="assets/partners/logos/arkangel-university.png" alt=""></span>
+          <span class="m-logo on-dark"><img src="assets/partners/logos/anglia-ruskin-university.svg" alt=""></span>
+          <span class="m-logo"><img src="assets/partners/logos/arden-university.svg" alt=""></span>
+          <span class="m-logo"><img src="assets/partners/logos/bsbi-germany.png" alt=""></span>
+          <span class="m-logo"><img src="assets/partners/logos/de-montfort-university.svg" alt=""></span>
+          <span class="m-logo"><img src="assets/partners/logos/university-of-gloucestershire.svg" alt=""></span>
+        </div>
+      </div>
+    </section>
+
     <!-- ══════════ 06 · SCHOLARSHIPS — full-bleed gradient band ══════════ -->
     <section class="band" id="scholarships" aria-labelledby="band-title">
       <div class="band-inner">
         <p class="kicker kicker-light">Scholarships</p>
         <h2 id="band-title" class="band-title">Dream bigger.<br>Pay less.</h2>
         <div class="band-stats">
-          <div class="num-card"><span class="num" data-count="600" data-suffix="+">0</span><p>partner universities</p></div>
+          <div class="num-card"><span class="num" data-count="100" data-suffix="+">0</span><p>partner universities</p></div>
           <div class="num-card"><span class="num" data-count="20" data-suffix="+">0</span><p>countries</p></div>
           <div class="num-card"><span class="num" data-count="10" data-suffix="k+">0</span><p>dreams boarded</p></div>
           <div class="num-card"><span class="num" data-count="95" data-suffix="%">0</span><p>visa success</p></div>
@@ -390,15 +464,15 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a href="index.html" class="nav-brand footer-logo" aria-label="Education Hub — home">
-          <img src="assets/logo.png" alt="Education Hub" class="nav-logo">
+          <img src="assets/logo-nav.png" alt="Education Hub" class="nav-logo">
         </a>
         <p class="footer-tagline">Your world. Your education. Our promise.</p>
       </div>
       <nav class="footer-cols" aria-label="Footer">
-        <div><h4>Journeys</h4><a href="students.html">Students</a><a href="#">Institutions</a><a href="#">Destinations</a><a href="#">Scholarships</a></div>
-        <div><h4>Company</h4><a href="#">About</a><a href="#">Services</a><a href="#">Leadership</a><a href="partners.html">Exclusive Partners</a><a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a><a href="#">Success Stories</a></div>
-        <div><h4>Say hi</h4><a href="mailto:hello@educationhub.com">hello@educationhub.com</a><a href="#">Contact</a></div>
+        <div><h4>Journeys</h4><a href="students.html">Students</a><a href="institutions.html">Institutions</a><a href="index.html#destinations">Destinations</a><a href="index.html#scholarships">Scholarships</a></div>
+        <div><h4>Courses</h4><a href="courses-ug.html">Undergraduate</a><a href="courses-pg.html">Postgraduate</a><a href="short-courses.html">Short Courses</a></div>
+        <div><h4>Company</h4><a href="about.html">About</a><a href="partners.html">Exclusive Partners</a><a href="contact.html">Contact</a><a href="index.html#stories">Success Stories</a></div>
+        <div><h4>Say hi</h4><a href="mailto:pbhatia@edu-hub.org.uk">pbhatia@edu-hub.org.uk</a><a href="mailto:partnerships@edu-hub.org.uk">partnerships@edu-hub.org.uk</a></div>
       </nav>
     </div>
     <div class="footer-bottom">
@@ -406,10 +480,16 @@
     </div>
   </footer>
 
+  <a class="whatsapp-fab" href="https://wa.me/971562022750" target="_blank" rel="noopener" aria-label="Chat with Education Hub on WhatsApp">
+    <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+  </a>
+
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/destinations-data.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
 </body>
 </html>
