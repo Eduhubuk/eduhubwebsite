@@ -276,23 +276,35 @@ window.EDUHUB_COURSES = {
     {
       "name": "Bachelor of Science in Nursing",
       "awarding": "Anglia Ruskin University",
-      "location": "UK",
+      "location": "Cambridge / Chelmsford / King's Lynn / Peterborough, UK",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "3 years full-time (4 years with foundation year)",
+      "tuition": "£20,500 per year (international, 2026/27); UK £9,790 per year",
+      "intakes": "September 2026; March 2027 (foundation-year route also January 2027)",
+      "entrySummary": "96 UCAS Tariff points, plus 3 GCSEs at grade C/4 or above including English and Maths · IELTS 7.0 overall with at least 6.5 in writing and 7.0 in reading, listening and speaking"
     },
     {
       "name": "BSc (Hons) Business Management",
       "awarding": "Anglia Ruskin University",
-      "location": "UK",
+      "location": "Cambridge and Chelmsford, UK",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "3 years full-time (options: 4 years with placement, 4 years with foundation year, 2 years accelerated)",
+      "tuition": "£17,500 per year (international, 2026/27, standard route); accelerated route £20,500 per year; UK £9,790 per year",
+      "intakes": "September 2026; January 2027",
+      "entrySummary": "96 UCAS Tariff points, plus 3 GCSEs at grade C/4 or above including English and Maths · IELTS 6.0 (Academic) or equivalent"
     },
     {
       "name": "Business Management BSc (Hons)",
       "awarding": "Anglia Ruskin University",
-      "location": "UK",
+      "location": "Online (university based in Cambridge/Chelmsford, UK)",
       "mode": "Online",
-      "note": null
+      "note": null,
+      "duration": "4 years part-time online",
+      "tuition": "£17,700 total for the course (£4,425 per year over 4 years); standard fee, no separate international rate stated",
+      "intakes": "January and September (next application deadline 27 August 2026)",
+      "entrySummary": "At least 80 UCAS Tariff points at A Level or NVQ Level 3 (or equivalent), plus Maths and English GCSEs at grade C or above · IELTS 6.0 or equivalent if English is not your first language"
     },
     {
       "name": "BSc Business Top-up",
@@ -311,114 +323,163 @@ window.EDUHUB_COURSES = {
     {
       "name": "Bachelor of Science in Nursing",
       "awarding": "Canterbury Christ Chruch Univesity",
-      "location": "UK",
+      "location": "Canterbury and Medway, UK",
       "mode": "On Campus",
-      "note": "Only UK Domicile"
+      "note": "Only UK Domicile",
+      "duration": "3 years full-time",
+      "tuition": "£17,000 per year (overseas, 2026/27); UK £9,790 per year",
+      "intakes": "September 2026",
+      "entrySummary": "GCSE English language and mathematics grades 4-9/A-C (or equivalent); typical offer BBC at A level or equivalent; place subject to interview, health clearance and DBS check · IELTS 7.0 overall with no element below 6.5 for nursing courses starting 2026 (6.5 overall, no element below 6.5, from 2027 entry)"
     },
     {
       "name": "BSc (Hons) Policing and Criminal Investigation",
       "awarding": "Arden University",
-      "location": "UK",
+      "location": "Online (Arden University head office: Coventry, UK)",
       "mode": "Online",
-      "note": null
+      "note": null,
+      "duration": "Part-time: 3 years+ (online, flexible)",
+      "tuition": "£7,140 per level x 3 levels (Levels 4-6) = £21,420 total (standard fee shown for UK-England); online fees vary by country tier — e.g. India shows £5,500 per level (£16,500 total). No academic year stated",
+      "intakes": "October 2026",
+      "entrySummary": "Two A level subjects (or equivalent), plus grade C or above in three GCSE subjects (or equivalent); Access to HE / BTEC Extended Diploma also accepted; non-standard entry via work experience considered · IELTS 6.0 with no less than 5.5 in any element, or TOEFL iBT 90, or equivalent"
     },
     {
       "name": "LLB (Hons) Law",
       "awarding": "Arden University",
-      "location": "UK",
+      "location": "Online (blended option available at UK study centres; head office Coventry, UK)",
       "mode": "Online",
-      "note": null
+      "note": null,
+      "duration": "Part-time: 3 years+ (online, flexible)",
+      "tuition": "£7,140 per level x 3 levels (Levels 4-6) = £21,420 total (standard online fee shown for UK-England); online fees vary by country tier — e.g. India shows £5,500 per level (£16,500 total). Blended on-campus route £9,525 per year. No academic year stated",
+      "intakes": "September 2026; October 2026; February 2027",
+      "entrySummary": "Three A level subjects (or equivalent), plus grade C or above in four GCSE subjects including English (or equivalent), or a recognised Access Programme · IELTS 6.0 with no less than 5.5 in any element, or TOEFL iBT 80, or equivalent"
     },
     {
       "name": "HND Qualifications",
       "awarding": "City of Glasgow College- Scotland",
-      "location": "UK",
+      "location": "Glasgow, Scotland, UK (City Campus, 190 Cathedral Street; Riverside Campus, 21 Thistle Street)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "2 years full-time (college states: 'A Higher National Diploma (HND) will take two years full-time'; SCQF Level 8)",
+      "tuition": "£8,500 (international fee for 2026/27 full-time courses, including SQA fee) — flat college-wide rate, not HND-specific"
     },
     {
       "name": "Diploma in Electrical Installations",
       "awarding": "MCAST",
-      "location": "MALTA",
+      "location": "MCAST Main Campus, Triq Kordin, Paola, Malta (Institute of Engineering and Transport)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "1 year full-time (MQF Level 3, 60 ECTS)",
+      "tuition": "EUR 6,700 total course fee for non-EU students (MQF Level 3, 1-year courses, per MCAST non-EU fee schedule 2024/25); free for Maltese/EU nationals",
+      "intakes": "October (non-EU application window is for courses commencing October 2026)",
+      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade) · Positive colour vision assessment clearance required"
     },
     {
       "name": "Diploma In Electrical Engineering",
       "awarding": "MCAST",
-      "location": "MALTA",
+      "location": "MCAST Main Campus, Triq Kordin, Paola, Malta (Institute of Engineering and Transport)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "1 year full-time (MQF Level 3, 60 ECTS) — applies to MCAST Level 3 engineering diplomas generally",
+      "tuition": "EUR 6,700 total course fee for non-EU students (MQF Level 3, 1-year courses, per MCAST non-EU fee schedule 2024/25); free for Maltese/EU nationals",
+      "intakes": "October",
+      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade)"
     },
     {
       "name": "Diploma in Mechanical Engineering",
       "awarding": "MCAST",
-      "location": "MALTA",
+      "location": "MCAST Main Campus, Triq Kordin, Paola, Malta (Institute of Engineering and Transport, Mechanical Engineering Department)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "1 year full-time (MQF Level 3, 60 ECTS)",
+      "tuition": "EUR 6,700 total course fee for non-EU students (MQF Level 3, 1-year courses, per MCAST non-EU fee schedule 2024/25); free for Maltese/EU nationals",
+      "intakes": "October",
+      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade) · Maturity clause available for applicants 19+"
     },
     {
       "name": "Diploma in Air Conditioning (HVAC)",
       "awarding": "MCAST",
-      "location": "MALTA",
+      "location": "MCAST Main Campus, Triq Kordin, Paola, Malta (Institute of Engineering and Transport, Building Services Department)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "1 year full-time (MQF Level 3, 60 ECTS)",
+      "tuition": "EUR 6,700 total course fee for non-EU students (MQF Level 3, 1-year courses, per MCAST non-EU fee schedule 2024/25); free for Maltese/EU nationals",
+      "intakes": "October",
+      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade) · Positive colour vision assessment clearance required"
     },
     {
       "name": "Diploma in Automotive Engineering",
       "awarding": "MCAST",
-      "location": "MALTA",
+      "location": "MCAST Main Campus, Triq Kordin, Paola, Malta (Institute of Engineering and Transport, Land Transport Department)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "1 year full-time (MQF Level 3, 60 ECTS) — applies to MCAST Level 3 automotive diplomas generally",
+      "tuition": "EUR 6,700 total course fee for non-EU students (MQF Level 3, 1-year courses, per MCAST non-EU fee schedule 2024/25); free for Maltese/EU nationals",
+      "intakes": "October",
+      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade)"
     },
     {
       "name": "Civil Engineering (BSc)",
       "awarding": "Girne American University",
-      "location": "Cyprus",
+      "location": "Karmi Campus, Karaoglanoglu, Kyrenia (Girne), North Cyprus",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "4 years (240 ECTS)",
+      "tuition": "EUR 8,000 per year (Engineering faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee"
     },
     {
       "name": "Computer Engineering (BSc)",
       "awarding": "Girne American University",
-      "location": "Cyprus",
+      "location": "Karmi Campus, Karaoglanoglu, Kyrenia (Girne), North Cyprus",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "4 years (132 credits / 40 courses)",
+      "tuition": "EUR 8,000 per year (Engineering faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee"
     },
     {
       "name": "AI Engineering (BSc)",
       "awarding": "Girne American University",
-      "location": "Cyprus",
+      "location": "Kyrenia (Girne), North Cyprus (GAU main campus)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "tuition": "EUR 8,000 per year (Engineering faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee — assumes Engineering faculty; program page shows no figure"
     },
     {
       "name": "Healthcare Management (BSc)",
       "awarding": "Girne American University",
-      "location": "Cyprus",
+      "location": "Karmi Campus, Karaoglanoglu, Kyrenia (Girne), North Cyprus",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "4 years",
+      "tuition": "EUR 8,000 per year (Health Sciences faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee"
     },
     {
       "name": "Bachelor of Science in Artificial Intelligence",
       "awarding": "De Montfort University",
-      "location": "Dubai",
+      "location": "Dubai, UAE",
       "mode": "On Campus",
       "note": null
     },
     {
       "name": "Bachelor of Arts in Fashion Marketing and Design",
       "awarding": "De Montfort University",
-      "location": "Dubai",
+      "location": "Dubai, UAE (DMU Dubai campus, Dubai Internet City)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "Three years full-time",
+      "tuition": "AED 63,614 (figure shown on official course page; page framing suggests annual course fee but per-year vs total not explicitly labelled in extraction - verify before publishing)",
+      "intakes": "January, September",
+      "entrySummary": "A-Level CCD / IB 24 points / American HS Diploma 3.0 GPA + AP / CBSE 65% best four · IELTS Academic 6.0 (min 5.5 each band) or TOEFL iBT 72 or PTE 58"
     },
     {
       "name": "BA Business",
       "awarding": "IBAT College Dublin",
-      "location": "Ireland",
+      "location": "Dublin, Ireland (Wellington Quay & Frederick Street campuses)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "3 years full-time",
+      "tuition": "EUR 5,951 per year (overseas students)",
+      "intakes": "October 2026",
+      "entrySummary": "Leaving Certificate O6/H7 or higher in 5 subjects (incl. English & Maths) or equivalent · IELTS 6.0 (no band below 5.5)"
     },
     {
       "name": "Diploma in Business Administration",
@@ -437,121 +498,177 @@ window.EDUHUB_COURSES = {
     {
       "name": "Diploma in Business Administration",
       "awarding": "Canadian College of Higher Studies",
-      "location": "Canada",
+      "location": "Toronto, Ontario",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "47 weeks (954 hours)",
+      "tuition": "CAD 15,600 (international; fee year not stated on page)",
+      "intakes": "Bi-monthly",
+      "entrySummary": "Ontario Secondary School Diploma or equivalent · OR 18+ years old and pass a qualifying test (Wonderlic, score 15)"
     },
     {
       "name": "Bachelors of Commerce",
       "awarding": "University Canada West",
-      "location": "Canada",
+      "location": "Vancouver, British Columbia",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "4 years (40 courses / 120 credits); accelerated 3-year completion option",
+      "tuition": "CAD 89,000 total programme (international, 2026 fees: $2,225 per course x 40); 2027 fees: $93,440 total",
+      "intakes": "Fall, Winter, Spring, Summer",
+      "entrySummary": "Canadian Grade 12 diploma or equivalent with minimum C average (2.0 on 4.33 scale) · IELTS Academic 6.5 overall with minimum 6.0 in writing, or equivalent"
     },
     {
       "name": "Bachelor of Arts in Business Communication",
       "awarding": "University Canada West",
-      "location": "Canada",
+      "location": "Vancouver, British Columbia",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "4 years (40 courses / 120 credits)",
+      "tuition": "CAD 89,000 total programme (international, 2026 fees: $2,225 per course x 40); 2027 fees: $93,440 total",
+      "intakes": "Fall, Winter, Spring, Summer",
+      "entrySummary": "Canadian Grade 12 diploma or equivalent with overall average of C or better · IELTS Academic 6.5 overall with minimum 6.0 in writing, or equivalent"
     },
     {
       "name": "BS Biomedical Sciences",
       "awarding": "University of Niagara Falls Canada",
-      "location": "Canada",
+      "location": "Niagara Falls, Ontario",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "48 months (120 credits)",
+      "tuition": "CAD 120,000 total programme (international: $1,000 per credit x 120 credits), as published on official tuition page Aug 2026 (fee year not stated)",
+      "intakes": "Fall (September), Winter (January)",
+      "entrySummary": "Ontario Secondary School Diploma or equivalent, minimum 70% average on best 6 Grade 12 4U/4M courses · English language proficiency evidence if applicable"
     },
     {
       "name": "Bachelors Business Administration",
       "awarding": "University of Niagara Falls Canada",
-      "location": "Canada",
+      "location": "Niagara Falls, Ontario",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "48 months (120 credits)",
+      "tuition": "CAD 80,040 total programme (international: $667 per credit x 120 credits), as published on official tuition page Aug 2026 (fee year not stated)",
+      "intakes": "Fall (September), Winter (January)",
+      "entrySummary": "OSSD or equivalent: six Grade 12 4U/4M courses incl. ENG4U and one 4U Math, minimum 70% average on best 6 · English language proficiency evidence if applicable"
     },
     {
       "name": "BA Business Top-up",
       "awarding": "IES Business School",
-      "location": "France",
+      "location": "Rouen, France (IES Normandie campus) — school identity confirmed",
       "mode": "On Campus",
       "note": null
     },
     {
       "name": "BA (Hons) Comic and Concept Art",
       "awarding": "Berlin School of Business and Innovation",
-      "location": "Germany",
+      "location": "Hamburg, Germany",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "3 years; 4 years international route (integrated foundation)",
+      "entrySummary": "Direct entry: school-leaving certificate giving HE access (Abitur/IB/UK Level 3 equivalent); foundation route: age 17+, 11 years schooling · English: IELTS 6.0 (direct entry) / 5.0 (foundation)"
     },
     {
       "name": "BA (Hons) Game Design",
       "awarding": "Berlin School of Business and Innovation",
-      "location": "Germany",
+      "location": "Hamburg, Germany",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "3 years; 4 years international route (integrated foundation)",
+      "entrySummary": "Direct entry: school-leaving certificate giving HE access (Abitur/IB/UK Level 3 equivalent); Year 3 entry with HND/DipHE (UK Level 5) · English: IELTS 6.0 (direct/Year 3) / 5.0 (foundation)"
     },
     {
       "name": "BA (Hons) Computer Science and Digitisation",
       "awarding": "Berlin School of Business and Innovation",
-      "location": "Germany",
+      "location": "Berlin, Germany",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "3 years; 4 years international route; Year 3 direct entry 1 year",
+      "tuition": "EUR 10,425 per year (discounts up to 50% available)",
+      "intakes": "February, October (intakes subject to change)",
+      "entrySummary": "Direct entry: Abitur/Fachhochschulreife/Matura/IB or UK Level 3 equivalent; Year 3 entry with HND/DipHE (UK Level 5) · English: IELTS 6.0 (direct/Year 3) / 5.0 (foundation)"
     },
     {
       "name": "Bachelor of Science in Business Administration",
       "awarding": "Herzing University",
-      "location": "USA",
+      "location": "Online (100% online; no campus delivery listed for this programme). Available in all 50 US states, DC and Virgin Islands.",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "36 months typical; 120 semester credit hours",
+      "tuition": "$515 per credit (rate listed on official page as of Aug 2026; academic year not stated)",
+      "intakes": "Multiple starts per year; next start listed as September 8 (page viewed 2026-08-17)",
+      "entrySummary": "High school diploma, GED or equivalent · Capacity to succeed shown via prior ACT/SAT, prior college credit, or entrance testing; admissions interview"
     },
     {
       "name": "Bachelor of Arts in Psychology",
       "awarding": "Herzing University",
-      "location": "USA",
+      "location": "Online (100% online classes; no on-campus option listed)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "32 months average (8 semesters); 120 credits",
+      "tuition": "$450 per credit (base tuition for 120 credits $54,000; rate listed on official page as of Aug 2026)",
+      "intakes": "Multiple starts per year; next start listed as September 8 (page viewed 2026-08-17)",
+      "entrySummary": "High school diploma, GED or equivalent · Entrance testing or prior ACT/SAT scores/college credit; admissions interview"
     },
     {
       "name": "Bachelor of Science in Computer Science",
       "awarding": "Avila University",
-      "location": "USA",
+      "location": "Kansas City, Missouri (on campus)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "tuition": "$40,540/yr tuition + $1,000/yr university fee (traditional undergraduate 12-18 credits/semester, 2025-2026; same list rate applies to international students - international first-year total cost estimate $41,540 tuition on the international admissions page)",
+      "entrySummary": "International English proficiency: TOEFL iBT 61+ or IELTS 5.0 overall (no band below 5.0) or Duolingo 90+ · No specific GPA requirement published on international admissions page"
     },
     {
       "name": "BA in Supply Chain Management",
       "awarding": "Avila University",
-      "location": "USA",
+      "location": "Online (100% online, asynchronous/synchronous mix; Avila University is in Kansas City, MO)",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "120 credit hours; 8-week courses, self-paced (no fixed years stated)",
+      "tuition": "$275 per credit hour (adult undergraduate, stated as estimated 2023-2024 rate on programme page; university tuition page lists $300/credit for adult undergraduates fall 2025/spring 2026)",
+      "intakes": "New sessions start every eight weeks, year-round",
+      "entrySummary": "Admission requirements not published on the programme page · International English proficiency (university-wide): TOEFL iBT 61+ or IELTS 5.0"
     },
     {
       "name": "BA in Animation",
       "awarding": "Webster University",
-      "location": "USA",
+      "location": "Webster Groves (St. Louis area), Missouri - in person",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "4 years (average time to complete)",
+      "tuition": "$33,360 per academic year flat fee, full-time 13-18 credit hours (2026-2027); part-time $500 per credit hour",
+      "intakes": "Fall, spring and summer terms; rolling admissions",
+      "entrySummary": "Test-optional; competitive applicants have cumulative GPA 2.75+ on 4.0 scale, 19 units of academic credit · International: TOEFL iBT 80 or IELTS Academic 6.0 or Duolingo 110"
     },
     {
       "name": "BS Management Information System",
       "awarding": "Webster University",
-      "location": "USA",
+      "location": "Webster Groves (St. Louis area), Missouri; also offered via Webster Online, Webster Geneva and Webster Tashkent campuses",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "duration": "4 years (average); 120 credit hours (57 required core credits)",
+      "tuition": "$33,360 per academic year flat fee, full-time 13-18 credit hours (2026-2027); part-time $500 per credit hour",
+      "intakes": "Fall, spring and summer terms; rolling admissions",
+      "entrySummary": "Test-optional; competitive applicants have cumulative GPA 2.75+ on 4.0 scale · International: TOEFL iBT 80 or IELTS Academic 6.0 or Duolingo 110"
     },
     {
       "name": "BS Business Intelligence & Analytics",
       "awarding": "Concordia University Chicago",
-      "location": "USA",
+      "location": "River Forest, Illinois (on campus)",
       "mode": "On Campus",
-      "note": "Contract Terminated"
+      "note": "Contract Terminated",
+      "duration": "120 credits (4-year bachelor's; years not explicitly stated on official page)",
+      "tuition": "$19,420 per semester / $38,840 annually flat rate for 12-18 credit hours (2026-2027); $1,178 per credit hour below 12 credits",
+      "entrySummary": "International: TOEFL iBT 72 or IELTS 6.0 or Duolingo 95; official transcripts (foreign transcripts credential-evaluated) · Proof of secondary school graduation; certified financial support document; documents due at least 2 months before intended term"
     },
     {
       "name": "BS Health Science",
       "awarding": "Concordia University Chicago",
-      "location": "USA",
+      "location": "River Forest, Illinois (on campus)",
       "mode": "On Campus",
-      "note": "Contract Terminated"
+      "note": "Contract Terminated",
+      "duration": "120 credits (4-year bachelor's; years not explicitly stated on official page)",
+      "tuition": "$19,420 per semester / $38,840 annually flat rate for 12-18 credit hours (2026-2027); $1,178 per credit hour below 12 credits",
+      "entrySummary": "International: TOEFL iBT 72 or IELTS 6.0 or Duolingo 95; official transcripts (foreign transcripts credential-evaluated) · Proof of secondary school graduation; certified financial support document; documents due at least 2 months before intended term"
     }
   ],
 

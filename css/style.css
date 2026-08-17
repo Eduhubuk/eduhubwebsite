@@ -132,7 +132,7 @@ main, .footer { position: relative; z-index: 3; }
 }
 .nav-brand b { font-weight: 800; }
 .nav-mark { width: 64px; }
-.nav-logo { height: 48px; width: auto; display: block; }
+.nav-logo { height: 52px; width: auto; display: block; }
 .nav-links a[aria-current="page"] { color: var(--azure); }
 .nav-links a[aria-current="page"]::after { transform: scaleX(1); }
 .nav-links { display: flex; gap: 1.75rem; margin-left: auto; }
@@ -2423,7 +2423,7 @@ section { padding: var(--sp-7) var(--gutter); max-width: var(--maxw); margin-inl
 
 /* nav logo: trimmed asset renders at true size now */
 @media (max-width: 900px) {
-  .nav-logo { height: 38px; }
+  .nav-logo { height: 40px; }
 }
 
 /* ─── nav dropdowns (Courses / Contact) ─── */
@@ -2727,8 +2727,15 @@ section { padding: var(--sp-7) var(--gutter); max-width: var(--maxw); margin-inl
 }
 .footer-top, .footer-bottom { position: relative; z-index: 1; }
 .footer-logo-img {
-  height: 66px; width: auto; display: block;
-  background: #fff; padding: 0.55rem 0.95rem; border-radius: var(--r-md);
+  height: 74px; width: auto; display: block;
+  background: #fff; padding: 0.6rem 1rem; border-radius: var(--r-md);
   box-shadow: 0 14px 34px -18px rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 560px) { .footer-logo-img { height: 58px; } }
+@media (max-width: 560px) { .footer-logo-img { height: 62px; } }
+
+/* ═══════════════════════════════════════════════════════════
+   FINAL POLISH — Exclusive Partner is a persistently
+   highlighted nav item (client instruction), site-wide.
+   ═══════════════════════════════════════════════════════════ */
+.nav-links a[href="partners.html"] { color: var(--azure); font-weight: 700; }
+.mobile-menu nav > a[href="partners.html"] { color: var(--azure); }

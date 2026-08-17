@@ -1,5 +1,18 @@
 # EDUCATION HUB · "DAYLIGHT" — Creative Direction & Design System (Iteration 3 · pre-launch refinement)
 
+## Chapter Eleven — final polish pass
+
+**UG card parity.** All 40 Excel-derived cards were enriched from official institution websites (aru.ac.uk, canterbury.ac.uk, arden.ac.uk, cityofglasgowcollege.ac.uk, mcast.edu.mt, gau.edu.tr, berlinsbi.com, ucanwest.ca, unfc.ca, thecanadiancollege.ca, dmu.ac.uk, herzing.edu, avila.edu, webster.edu, cuchicago.edu, ibat.ie) — location, duration, international tuition, intakes and an entry summary wherever the official page states them; the renderer gained an "Entry" meta row. 34/40 now match the manually built cards' level of detail. Six stay minimal because the programme verifiably does not exist or the institution could not be confirmed (ARU online Business Top-up, CCCU BA English Language & Communication, DMU Dubai BSc AI, Pacific Link College, York College of Applied Sciences, IES Business School top-up) — kept per the client's no-removal instruction and flagged to them.
+
+**CTAs.** Every course-card CTA (UG/PG/short/NCFE cards + the detail page's action) reads "Know More"; nav CTAs untouched.
+
+**Chrome.** "Exclusive Partner" is persistently azure/bold in desktop and mobile navigation on every page (`a[href="partners.html"]` — deliberate, not an active state). Header logo 52px (40px mobile), footer chip 74px. Favicon: `assets/favicon.png` (256px crop of the brand mark from logo.png), linked with `rel="icon"` + `apple-touch-icon` on all 14 pages.
+
+**Contact.** Real office address on all four contact pages (96 Heathfield Park Drive, Chadwell Heath, Romford, England, RM6 4FJ), map re-centred on it (z=15). Working hours and Regions-we-serve removed from the details card. Emails by audience: general/students/channel-partners show pbhatia@ + info@; institutions show pbhatia@ + partnerships@ + info@. ⚠ Lesson: a lazy `.*?` across `<li>` boundaries in the removal regex ate the whole details list — caught in browser QA and the list rebuilt from the canonical markup. Verify structural deletions per-item.
+
+**Verified.** 50 UG cards at 1280 and 375 (avg 4.7 meta rows, none over-wide, no overflow), one unique CTA label, blue highlight both menus, favicon loading, address/map/emails per audience, console clean.
+
+
 ## Chapter Ten — final refinements (client sign-off round)
 
 **Courses data.** `js/courses-data.js` grew from 7 to 52 entries: 40 UG programmes imported verbatim from the client's "University Flagship Programmes" Excel (Direct sheet — including universities the sheet marks Contract Terminated, per explicit instruction not to filter, and the sheet's own spellings), four programmes from client-supplied URLs (SP Jain BBA + BSc Data Science, both aivancity programmes), and the Full MBA (Online) — the LAAT dual-certification pathway from the client's brochure (Stage 1 Ofqual-regulated Level 7 Diploma, Stage 2 MBA awarded by Plymouth Marjon; 14-month fast-track, 100% online, Jan/May/Sep). Excel entries are "light" (no slug) — the renderer now shows View course only for detail-capable entries, and the detail page's shortcut button follows the course's own level ("All postgraduate courses" on PG). "LAAT Business Foundation" from the URL list was already on the site as BSc (Hons) Business with Foundation Year — not duplicated.

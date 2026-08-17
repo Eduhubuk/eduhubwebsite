@@ -96,6 +96,7 @@ document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
         ${metaRow("Tuition", c.tuition)}
         ${metaRow("Application fee", c.applicationFee)}
         ${metaRow("Assessment", c.assessment)}
+        ${metaRow("Entry", c.entrySummary)}
         ${metaRow("Eligibility", c.note)}
       </ul>
       ${c.overview ? `<p class="course-overview">${esc(c.overview.split(". ")[0].replace(/\.$/, ""))}.</p>` : ""}
@@ -103,7 +104,7 @@ document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
         ${c.slug ? `<a class="btn btn-ghost" href="course.html#${esc(c.slug)}">View course
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
         </a>` : ""}
-        <a class="btn btn-primary" href="${applyHref(c.name)}">Apply Now
+        <a class="btn btn-primary" href="${applyHref(c.name)}">Know More
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
         </a>
       </div>
@@ -137,7 +138,7 @@ document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
       </ul>
       <p class="course-overview">${esc(c.overview)}</p>
       <div class="course-actions">
-        <a class="btn btn-primary" href="${applyHref(c.name)}">Apply Now
+        <a class="btn btn-primary" href="${applyHref(c.name)}">Know More
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
         </a>
       </div>
@@ -155,7 +156,7 @@ document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
       </ul>
       <p class="course-overview">${esc(n.overview)}</p>
       <div class="course-actions">
-        <a class="btn btn-primary" href="${applyHref(n.name)}">Apply Now
+        <a class="btn btn-primary" href="${applyHref(n.name)}">Know More
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
         </a>
       </div>
