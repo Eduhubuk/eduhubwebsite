@@ -132,7 +132,7 @@ main, .footer { position: relative; z-index: 3; }
 }
 .nav-brand b { font-weight: 800; }
 .nav-mark { width: 64px; }
-.nav-logo { height: 52px; width: auto; display: block; }
+.nav-logo { height: 70px; width: auto; display: block; }
 .nav-links a[aria-current="page"] { color: var(--azure); }
 .nav-links a[aria-current="page"]::after { transform: scaleX(1); }
 .nav-links { display: flex; gap: 1.75rem; margin-left: auto; }
