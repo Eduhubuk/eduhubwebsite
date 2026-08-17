@@ -89,17 +89,20 @@ document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
       <h3>${esc(c.name)}</h3>
       <ul class="course-meta">
         ${metaRow("Location", c.location)}
+        ${metaRow("Mode", c.mode)}
+        ${metaRow("Delivered by", c.deliveredBy)}
         ${metaRow("Duration", c.duration)}
         ${metaRow("Intakes", c.intakes)}
         ${metaRow("Tuition", c.tuition)}
         ${metaRow("Application fee", c.applicationFee)}
         ${metaRow("Assessment", c.assessment)}
+        ${metaRow("Eligibility", c.note)}
       </ul>
-      <p class="course-overview">${esc(c.overview.split(". ")[0].replace(/\.$/, ""))}.</p>
+      ${c.overview ? `<p class="course-overview">${esc(c.overview.split(". ")[0].replace(/\.$/, ""))}.</p>` : ""}
       <div class="course-actions">
-        <a class="btn btn-ghost" href="course.html#${esc(c.slug)}">View course
+        ${c.slug ? `<a class="btn btn-ghost" href="course.html#${esc(c.slug)}">View course
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
-        </a>
+        </a>` : ""}
         <a class="btn btn-primary" href="${applyHref(c.name)}">Apply Now
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
         </a>
@@ -118,10 +121,8 @@ document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
   const termsEl = document.querySelector("[data-short-terms]");
   termsEl.innerHTML = [
     ["Course fee", t.fee],
-    ["Minimum batch size", t.minBatch],
-    ["Maximum batch size", t.maxBatch],
     ["Intakes", t.intakes],
-    ["Partner commission", t.commission],
+    ["Delivered by", t.delivered],
   ].map(([b, v]) => `<div class="sc-term"><b>${esc(b)}</b><span>${esc(v)}</span></div>`).join("");
 
   marjonGrid.innerHTML = DATA.shortMarjon.courses.map((c) => `
@@ -132,6 +133,7 @@ document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
         ${metaRow("Duration", c.duration)}
         ${metaRow("Intakes", t.intakes)}
         ${metaRow("Course fee", t.fee)}
+        ${metaRow("Delivered by", t.delivered)}
       </ul>
       <p class="course-overview">${esc(c.overview)}</p>
       <div class="course-actions">
@@ -149,8 +151,9 @@ document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
       <ul class="course-meta">
         ${metaRow("Course type", n.type)}
         ${metaRow("Course fee", n.fee)}
-        ${metaRow("Partner commission", n.commission)}
+        ${metaRow("Delivered by", n.delivered)}
       </ul>
+      <p class="course-overview">${esc(n.overview)}</p>
       <div class="course-actions">
         <a class="btn btn-primary" href="${applyHref(n.name)}">Apply Now
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
@@ -193,6 +196,7 @@ document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
 
   document.querySelector("[data-cd-facts]").innerHTML = [
     ["Awarding institution", course.awarding],
+    ["Delivered by", course.deliveredBy],
     ["Location", course.location],
     ["Duration", course.duration],
     ["Intakes", course.intakes],
@@ -201,6 +205,14 @@ document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
     ["Tuition", course.tuition],
     ["Application fee", course.applicationFee],
   ].map(([l, v]) => metaRow(l, v)).join("");
+
+  /* the "all courses" shortcut follows the course's own level */
+  const isPg = (DATA.pg || []).some((c) => c.slug === course.slug);
+  const allBtn = document.querySelector(".cd-actions .btn-ghost");
+  if (allBtn) {
+    allBtn.href = isPg ? "courses-pg.html" : "courses-ug.html";
+    allBtn.textContent = isPg ? "All postgraduate courses" : "All undergraduate courses";
+  }
 
   document.querySelector("[data-cd-entry]").innerHTML =
     course.entry.map((e) => `<li>${esc(e)}</li>`).join("");

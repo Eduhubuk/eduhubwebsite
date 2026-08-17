@@ -197,6 +197,361 @@ window.EDUHUB_COURSES = {
           "Managing Events (20 credits)"
         ]}
       ]
+    },
+
+    /* ── Additional flagship programmes (client-supplied URLs, extracted 2026-08-17) ── */
+    {
+      "slug": "sp-jain-bba",
+      "name": "Bachelor of Business Administration (BBA)",
+      "awarding": "SP Jain London School of Management",
+      "location": "London, UK (exchange at SP Jain campuses in Singapore, Dubai and Sydney)",
+      "duration": "4 years full-time",
+      "intakes": "September 2026",
+      "applicationFee": null,
+      "tuition": "International: £17,500 (Yr 1) rising to £19,000 (Yr 4) · UK: £9,525 per year",
+      "assessment": null,
+      "delivery": "On campus, full-time",
+      "overview": "A four-year, full-time undergraduate business degree focused on business insight, critical thinking and decision-making. Students combine general business courses with specialisations including marketing, finance, entrepreneurship, business economics, and business analytics & AI.",
+      "entry": [
+        "120 UCAS Tariff Points in any subjects (equivalent to A-levels BBB; BTEC DDM; IB 30)",
+        "Minimum 12 years of completed schooling"
+      ],
+      "structure": null
+    },
+    {
+      "slug": "sp-jain-bds",
+      "name": "BSc Data Science",
+      "awarding": "SP Jain London School of Management",
+      "location": "London & Sydney (semester 4 in Sydney)",
+      "duration": "3 years full-time",
+      "intakes": null,
+      "applicationFee": null,
+      "tuition": "International: £17,500 (Yr 1) rising to £18,500 (Yr 3) · UK: £9,275 per year",
+      "assessment": null,
+      "delivery": "On campus, full-time — includes a 4-month internship after Year 2",
+      "overview": "A three-year, full-time undergraduate programme building mathematical knowledge and competencies in computation, statistical inference and probabilistic modelling. Includes a four-month internship after Year 2 and a final-year applied analytics capstone project.",
+      "entry": [
+        "Three GCE A-levels with a minimum of BBB, or equivalent"
+      ],
+      "structure": null
+    },
+    {
+      "slug": "aivancity-programme-grande-ecole",
+      "name": "Programme Grande École — AI and Data Science",
+      "awarding": "aivancity School of AI & Data for Business & Society, Paris",
+      "location": "Paris-Villejuif Campus, France",
+      "duration": "5 years of higher education",
+      "intakes": "September · January",
+      "applicationFee": null,
+      "tuition": null,
+      "assessment": null,
+      "delivery": "On campus; initial-training and work-study tracks; taught in French & English",
+      "overview": "A five-year post-secondary programme training future AI engineers able to design intelligent systems and lead AI innovation projects, integrating AI ethics and responsible practice for business and society. Multiple entry points from high-school diploma up to bachelor's level.",
+      "entry": [
+        "Entry points from high-school diploma up to bachelor's degree level (1–4 years of college)"
+      ],
+      "structure": null
+    },
+    {
+      "slug": "aivancity-bsc-applied-ai",
+      "name": "Bachelor of Science in Applied Artificial Intelligence",
+      "awarding": "aivancity School of AI & Data for Business & Society, Paris",
+      "location": "Nice Côte d'Azur Campus, France",
+      "duration": null,
+      "intakes": "January · September",
+      "applicationFee": null,
+      "tuition": null,
+      "assessment": null,
+      "delivery": "Full-time, on campus",
+      "overview": "An undergraduate programme (RNCP Level 6, Bac+3) preparing students for the profession of Artificial Intelligence Developer. The curriculum covers data processing, machine learning and deep learning, business issues, and the deployment of AI projects.",
+      "entry": [
+        "High-school diploma or one year of college (high-school senior / first-year college entry)"
+      ],
+      "structure": null
+    },
+
+    /* ── University flagship UG programmes — client Excel, 'Direct' sheet, used verbatim (2026-08-17).
+          Light entries: listing cards only (no detail page). Includes universities the sheet marks
+          'Contract Terminated' per explicit client instruction not to filter. ── */
+    {
+      "name": "Bachelor of Science in Nursing",
+      "awarding": "Anglia Ruskin University",
+      "location": "UK",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "BSc (Hons) Business Management",
+      "awarding": "Anglia Ruskin University",
+      "location": "UK",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Business Management BSc (Hons)",
+      "awarding": "Anglia Ruskin University",
+      "location": "UK",
+      "mode": "Online",
+      "note": null
+    },
+    {
+      "name": "BSc Business Top-up",
+      "awarding": "Anglia Ruskin University",
+      "location": "UK",
+      "mode": "Online",
+      "note": null
+    },
+    {
+      "name": "Bachelor of Arts in English Language and Communication",
+      "awarding": "Canterbury Christ Chruch Univesity",
+      "location": "UK",
+      "mode": "On Campus",
+      "note": "Only UK Domicile"
+    },
+    {
+      "name": "Bachelor of Science in Nursing",
+      "awarding": "Canterbury Christ Chruch Univesity",
+      "location": "UK",
+      "mode": "On Campus",
+      "note": "Only UK Domicile"
+    },
+    {
+      "name": "BSc (Hons) Policing and Criminal Investigation",
+      "awarding": "Arden University",
+      "location": "UK",
+      "mode": "Online",
+      "note": null
+    },
+    {
+      "name": "LLB (Hons) Law",
+      "awarding": "Arden University",
+      "location": "UK",
+      "mode": "Online",
+      "note": null
+    },
+    {
+      "name": "HND Qualifications",
+      "awarding": "City of Glasgow College- Scotland",
+      "location": "UK",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Diploma in Electrical Installations",
+      "awarding": "MCAST",
+      "location": "MALTA",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Diploma In Electrical Engineering",
+      "awarding": "MCAST",
+      "location": "MALTA",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Diploma in Mechanical Engineering",
+      "awarding": "MCAST",
+      "location": "MALTA",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Diploma in Air Conditioning (HVAC)",
+      "awarding": "MCAST",
+      "location": "MALTA",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Diploma in Automotive Engineering",
+      "awarding": "MCAST",
+      "location": "MALTA",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Civil Engineering (BSc)",
+      "awarding": "Girne American University",
+      "location": "Cyprus",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Computer Engineering (BSc)",
+      "awarding": "Girne American University",
+      "location": "Cyprus",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "AI Engineering (BSc)",
+      "awarding": "Girne American University",
+      "location": "Cyprus",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Healthcare Management (BSc)",
+      "awarding": "Girne American University",
+      "location": "Cyprus",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Bachelor of Science in Artificial Intelligence",
+      "awarding": "De Montfort University",
+      "location": "Dubai",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Bachelor of Arts in Fashion Marketing and Design",
+      "awarding": "De Montfort University",
+      "location": "Dubai",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "BA Business",
+      "awarding": "IBAT College Dublin",
+      "location": "Ireland",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Diploma in Business Administration",
+      "awarding": "Pacific Link College",
+      "location": "Canada",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Diploma in Business Administration",
+      "awarding": "York College of Applied Sciences",
+      "location": "Canada",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Diploma in Business Administration",
+      "awarding": "Canadian College of Higher Studies",
+      "location": "Canada",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Bachelors of Commerce",
+      "awarding": "University Canada West",
+      "location": "Canada",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Bachelor of Arts in Business Communication",
+      "awarding": "University Canada West",
+      "location": "Canada",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "BS Biomedical Sciences",
+      "awarding": "University of Niagara Falls Canada",
+      "location": "Canada",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Bachelors Business Administration",
+      "awarding": "University of Niagara Falls Canada",
+      "location": "Canada",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "BA Business Top-up",
+      "awarding": "IES Business School",
+      "location": "France",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "BA (Hons) Comic and Concept Art",
+      "awarding": "Berlin School of Business and Innovation",
+      "location": "Germany",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "BA (Hons) Game Design",
+      "awarding": "Berlin School of Business and Innovation",
+      "location": "Germany",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "BA (Hons) Computer Science and Digitisation",
+      "awarding": "Berlin School of Business and Innovation",
+      "location": "Germany",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Bachelor of Science in Business Administration",
+      "awarding": "Herzing University",
+      "location": "USA",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Bachelor of Arts in Psychology",
+      "awarding": "Herzing University",
+      "location": "USA",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "Bachelor of Science in Computer Science",
+      "awarding": "Avila University",
+      "location": "USA",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "BA in Supply Chain Management",
+      "awarding": "Avila University",
+      "location": "USA",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "BA in Animation",
+      "awarding": "Webster University",
+      "location": "USA",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "BS Management Information System",
+      "awarding": "Webster University",
+      "location": "USA",
+      "mode": "On Campus",
+      "note": null
+    },
+    {
+      "name": "BS Business Intelligence & Analytics",
+      "awarding": "Concordia University Chicago",
+      "location": "USA",
+      "mode": "On Campus",
+      "note": "Contract Terminated"
+    },
+    {
+      "name": "BS Health Science",
+      "awarding": "Concordia University Chicago",
+      "location": "USA",
+      "mode": "On Campus",
+      "note": "Contract Terminated"
     }
   ],
 
@@ -206,6 +561,7 @@ window.EDUHUB_COURSES = {
       slug: "mba-top-up",
       name: "MBA Top-Up",
       awarding: "Plymouth Marjon University",
+      deliveredBy: "London Academy for Applied Technology (LAAT)",
       location: "London, UK (LAAT) · hybrid",
       duration: "6–8 months",
       intakes: "January · May · September",
@@ -219,23 +575,58 @@ window.EDUHUB_COURSES = {
         "Good standard of English sufficient for postgraduate-level study"
       ],
       structure: [
-        { stage: "Top-up (Level 7, 60 credits)", modules: [
+        { stage: "Top-up (60 credits)", modules: [
           "Management Project Methods (20 credits) — research methods, project proposal development and ethics",
           "Strategic Management Project (40 credits) — strategic decision-making, implementation and leadership"
+        ]}
+      ]
+    },
+    {
+      /* Source: LAAT MBA Dual Certification brochure (client-supplied, 2026) */
+      slug: "full-mba-online",
+      name: "Full MBA (Online)",
+      awarding: "Plymouth Marjon University",
+      deliveredBy: "London Academy for Applied Technology (LAAT)",
+      location: "100% online",
+      duration: "14 months (fast-track path)",
+      intakes: "January · May · September",
+      applicationFee: null,
+      tuition: null,
+      assessment: null,
+      delivery: "100% online — 60% self-paced learning + 40% live interactive sessions",
+      overview: "A dual-certification MBA pathway delivered fully online for working professionals. Stage 1 is the Diploma in Strategic Management & Leadership, awarded by an Ofqual-regulated UK awarding body; Stage 2 completes the MBA degree awarded by Plymouth Marjon University — a UK degree with no career break required.",
+      entry: [
+        "Typically aged 19 and above",
+        "A first degree in Business, Management or related subjects, or a Level 6 qualification (e.g. a Diploma in Management) or an equivalent international qualification",
+        "English: applicants whose first language is not English take an internal English proficiency test as part of admissions"
+      ],
+      structure: [
+        { stage: "Stage 1 — Diploma in Strategic Management & Leadership (Ofqual-regulated UK awarding body)", modules: [
+          "Strategic Planning",
+          "Finance for Strategic Managers",
+          "Research for Strategic Development",
+          "Organisational Behaviour",
+          "Personal Development for Leadership and Strategic Management",
+          "International Business Environment",
+          "Strategic Marketing",
+          "Strategic Human Resource Management"
+        ]},
+        { stage: "Stage 2 — MBA Degree (awarded by Plymouth Marjon University)", modules: [
+          "Management Project Methods — research methods, project proposal development and ethics",
+          "Strategic Management Project — strategic decision-making, implementation and leadership"
         ]}
       ]
     }
   ],
 
-  /* ── Short courses · Plymouth Marjon University awarded (client-supplied commercial terms — do not alter) ── */
+  /* ── Short courses · Plymouth Marjon University awarded (client-supplied terms — do not alter;
+        batch sizes and commission removed from public display per final refinement list) ── */
   shortMarjon: {
     heading: "Plymouth Marjon University Awarded Courses",
     terms: {
-      fee: "GBP 250 per learner, per course",
-      minBatch: "5 learners",
-      maxBatch: "25 learners",
+      fee: "Only GBP 250",
       intakes: "January, April, July, and October",
-      commission: "GBP 50 per learner"
+      delivered: "LAAT"
     },
     courses: [
       {
@@ -256,7 +647,8 @@ window.EDUHUB_COURSES = {
     ]
   },
 
-  /* ── Short course · NCFE CACHE awarded (client-supplied — do not alter) ── */
+  /* ── Short course · NCFE CACHE awarded (client-supplied — do not alter;
+        commission removed from public display per final refinement list) ── */
   ncfe: {
     heading: "NCFE CACHE Awarded Course",
     course: {
@@ -264,7 +656,8 @@ window.EDUHUB_COURSES = {
       awarding: "NCFE CACHE",
       type: "Ofqual-regulated, self-learning short course",
       fee: "GBP 450 per learner",
-      commission: "GBP 100 per learner"
+      delivered: "LAAT",
+      overview: "An Ofqual-regulated, self-learning short course for Special Educational Needs Coordinators (SENCos) working in early years settings, awarded by NCFE CACHE."
     }
   },
 

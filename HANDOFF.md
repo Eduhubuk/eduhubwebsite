@@ -50,7 +50,11 @@ Primary nav + mobile menu on every page: About · Students · Institutions · Pa
 15. Brochures are the real client PDFs in `brochures/`, linked root-relative (`/brochures/arkangel-brochur.pdf`, `/brochures/laat-brochure.pdf`) with `download` — root-relative means the site must be served from a domain root, not a subdirectory. Photos are Unsplash placeholders (all current URLs verified loading; `photo-1523050854058` is DEAD, don't reuse). Logo: `assets/logo.png` (user-provided, in nav at 34px).
 
 
-## Final change list — implemented (this session, 2026-08-12)
+## Final refinements — implemented 2026-08-17
+
+UG list now renders 50 cards: 6 LAAT + 4 client-URL programmes (SP Jain ×2, aivancity ×2) + 40 verbatim from the client Excel (Direct sheet; light entries, no detail page — renderer hides "View course" when a course has no `slug`). PG has MBA Top-Up + Full MBA (Online) (brochure-sourced). Short courses show "Only GBP 250" / Intakes / "Delivered by LAAT" — batch sizes and commissions are gone from public display. Nav label is now "Exclusive Partner" (active state styled via `[aria-current="page"]`). Footer uses the header logo on a white chip over a subtle gradient. ArkAngel key facts include Scholarship — Up to $3,000. ⚠ The Excel was used verbatim per client instruction — including "Canterbury Christ Chruch Univesity" (sic) and Contract-Terminated universities; flagged to client, not corrected.
+
+## Final change list — implemented (previous session, 2026-08-12)
 
 The 30-point client change list is done except email sending (explicitly deferred by the client until the site moves to their hosting — forms still build a `mailto:`; routing/labels come from data-attributes on each `<form>`).
 

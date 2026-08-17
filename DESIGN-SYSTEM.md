@@ -1,5 +1,16 @@
 # EDUCATION HUB · "DAYLIGHT" — Creative Direction & Design System (Iteration 3 · pre-launch refinement)
 
+## Chapter Ten — final refinements (client sign-off round)
+
+**Courses data.** `js/courses-data.js` grew from 7 to 52 entries: 40 UG programmes imported verbatim from the client's "University Flagship Programmes" Excel (Direct sheet — including universities the sheet marks Contract Terminated, per explicit instruction not to filter, and the sheet's own spellings), four programmes from client-supplied URLs (SP Jain BBA + BSc Data Science, both aivancity programmes), and the Full MBA (Online) — the LAAT dual-certification pathway from the client's brochure (Stage 1 Ofqual-regulated Level 7 Diploma, Stage 2 MBA awarded by Plymouth Marjon; 14-month fast-track, 100% online, Jan/May/Sep). Excel entries are "light" (no slug) — the renderer now shows View course only for detail-capable entries, and the detail page's shortcut button follows the course's own level ("All postgraduate courses" on PG). "LAAT Business Foundation" from the URL list was already on the site as BSc (Hons) Business with Foundation Year — not duplicated.
+
+**Short courses.** Terms strip reduced to Course fee ("Only GBP 250") · Intakes · Delivered by (LAAT); batch sizes and partner commission removed from all public display. Every Marjon card and the NCFE card now carries "Delivered by LAAT", and the NCFE award is a full course card with an overview, matching the AI cards.
+
+**Chrome.** Nav label "Exc Partners" → "Exclusive Partner" everywhere, with a visible active state (`.nav-links a[aria-current="page"]` — azure + underline). Header logo 44→48px (38px mobile). The footer now carries the same header logo asset on a white chip (the navy wordmark is invisible directly on navy), over a subtle navy gradient with three low-opacity brand-colour radial glows and a 2px grad-brand top hairline — static, no animation. ArkAngel key facts gained "Scholarship — Up to $3,000" (client-supplied).
+
+**Verified.** Desktop 1280 + mobile 375: 50 UG cards render with no overflow or clipping, PG shows both MBAs, no batch/commission text anywhere on short courses, active nav state on the Exclusive Partner page, footer logo loads on all 14 pages, console clean.
+
+
 ## Chapter Nine — the final client change list (site-wide)
 
 One session, thirty items. Nothing was redesigned; everything new was assembled from the approved system.
