@@ -12,6 +12,7 @@ window.EDUHUB_COURSES = {
   ug: [
     {
       slug: "bsc-hons-business-foundation-year",
+      region: "uk",
       name: "BSc (Hons) Business with Foundation Year",
       awarding: "Plymouth Marjon University",
       location: "London, UK (LAAT)",
@@ -39,6 +40,7 @@ window.EDUHUB_COURSES = {
     },
     {
       slug: "bsc-hons-business-first-year",
+      region: "uk",
       name: "BSc (Hons) Business — Year 1",
       awarding: "Plymouth Marjon University",
       location: "London, UK (LAAT)",
@@ -68,6 +70,7 @@ window.EDUHUB_COURSES = {
     },
     {
       slug: "bsc-hons-business-second-year",
+      region: "uk",
       name: "BSc (Hons) Business — Year 2",
       awarding: "Plymouth Marjon University",
       location: "London, UK (LAAT)",
@@ -95,6 +98,7 @@ window.EDUHUB_COURSES = {
     },
     {
       slug: "bsc-hons-business-top-up",
+      region: "uk",
       name: "BSc (Hons) Business (Top-up)",
       awarding: "Plymouth Marjon University",
       location: "London, UK (LAAT)",
@@ -121,6 +125,7 @@ window.EDUHUB_COURSES = {
     },
     {
       slug: "certhe-business",
+      region: "uk",
       name: "Certificate of Higher Education (CertHE) in Business",
       awarding: "Plymouth Marjon University",
       location: "London, UK (LAAT)",
@@ -149,6 +154,7 @@ window.EDUHUB_COURSES = {
     },
     {
       slug: "bsc-hospitality-international-tourism",
+      region: "uk",
       name: "BSc (Hons) Hospitality and International Tourism Management with Foundation Year",
       awarding: "Plymouth Marjon University",
       location: "London, UK (LAAT)",
@@ -216,7 +222,8 @@ window.EDUHUB_COURSES = {
         "120 UCAS Tariff Points in any subjects (equivalent to A-levels BBB; BTEC DDM; IB 30)",
         "Minimum 12 years of completed schooling"
       ],
-      "structure": null
+      "structure": null,
+      "region": "uk"
     },
     {
       "slug": "sp-jain-bds",
@@ -233,7 +240,8 @@ window.EDUHUB_COURSES = {
       "entry": [
         "Three GCE A-levels with a minimum of BBB, or equivalent"
       ],
-      "structure": null
+      "structure": null,
+      "region": "uk"
     },
     {
       "slug": "aivancity-programme-grande-ecole",
@@ -250,7 +258,8 @@ window.EDUHUB_COURSES = {
       "entry": [
         "Entry points from high-school diploma up to bachelor's degree level (1–4 years of college)"
       ],
-      "structure": null
+      "structure": null,
+      "region": "europe"
     },
     {
       "slug": "aivancity-bsc-applied-ai",
@@ -267,9 +276,9 @@ window.EDUHUB_COURSES = {
       "entry": [
         "High-school diploma or one year of college (high-school senior / first-year college entry)"
       ],
-      "structure": null
+      "structure": null,
+      "region": "europe"
     },
-
     /* ── University flagship UG programmes — client Excel, 'Direct' sheet, used verbatim (2026-08-17).
           Light entries: listing cards only (no detail page). Includes universities the sheet marks
           'Contract Terminated' per explicit client instruction not to filter. ── */
@@ -282,7 +291,8 @@ window.EDUHUB_COURSES = {
       "duration": "3 years full-time (4 years with foundation year)",
       "tuition": "£20,500 per year (international, 2026/27); UK £9,790 per year",
       "intakes": "September 2026; March 2027 (foundation-year route also January 2027)",
-      "entrySummary": "96 UCAS Tariff points, plus 3 GCSEs at grade C/4 or above including English and Maths · IELTS 7.0 overall with at least 6.5 in writing and 7.0 in reading, listening and speaking"
+      "entrySummary": "96 UCAS Tariff points, plus 3 GCSEs at grade C/4 or above including English and Maths · IELTS 7.0 overall with at least 6.5 in writing and 7.0 in reading, listening and speaking",
+      "region": "uk"
     },
     {
       "name": "BSc (Hons) Business Management",
@@ -293,7 +303,8 @@ window.EDUHUB_COURSES = {
       "duration": "3 years full-time (options: 4 years with placement, 4 years with foundation year, 2 years accelerated)",
       "tuition": "£17,500 per year (international, 2026/27, standard route); accelerated route £20,500 per year; UK £9,790 per year",
       "intakes": "September 2026; January 2027",
-      "entrySummary": "96 UCAS Tariff points, plus 3 GCSEs at grade C/4 or above including English and Maths · IELTS 6.0 (Academic) or equivalent"
+      "entrySummary": "96 UCAS Tariff points, plus 3 GCSEs at grade C/4 or above including English and Maths · IELTS 6.0 (Academic) or equivalent",
+      "region": "uk"
     },
     {
       "name": "Business Management BSc (Hons)",
@@ -304,21 +315,24 @@ window.EDUHUB_COURSES = {
       "duration": "4 years part-time online",
       "tuition": "£17,700 total for the course (£4,425 per year over 4 years); standard fee, no separate international rate stated",
       "intakes": "January and September (next application deadline 27 August 2026)",
-      "entrySummary": "At least 80 UCAS Tariff points at A Level or NVQ Level 3 (or equivalent), plus Maths and English GCSEs at grade C or above · IELTS 6.0 or equivalent if English is not your first language"
+      "entrySummary": "At least 80 UCAS Tariff points at A Level or NVQ Level 3 (or equivalent), plus Maths and English GCSEs at grade C or above · IELTS 6.0 or equivalent if English is not your first language",
+      "region": "uk"
     },
     {
       "name": "BSc Business Top-up",
       "awarding": "Anglia Ruskin University",
       "location": "UK",
       "mode": "Online",
-      "note": null
+      "note": null,
+      "region": "uk"
     },
     {
       "name": "Bachelor of Arts in English Language and Communication",
       "awarding": "Canterbury Christ Chruch Univesity",
       "location": "UK",
       "mode": "On Campus",
-      "note": "Only UK Domicile"
+      "note": "Only UK Domicile",
+      "region": "uk"
     },
     {
       "name": "Bachelor of Science in Nursing",
@@ -329,7 +343,8 @@ window.EDUHUB_COURSES = {
       "duration": "3 years full-time",
       "tuition": "£17,000 per year (overseas, 2026/27); UK £9,790 per year",
       "intakes": "September 2026",
-      "entrySummary": "GCSE English language and mathematics grades 4-9/A-C (or equivalent); typical offer BBC at A level or equivalent; place subject to interview, health clearance and DBS check · IELTS 7.0 overall with no element below 6.5 for nursing courses starting 2026 (6.5 overall, no element below 6.5, from 2027 entry)"
+      "entrySummary": "GCSE English language and mathematics grades 4-9/A-C (or equivalent); typical offer BBC at A level or equivalent; place subject to interview, health clearance and DBS check · IELTS 7.0 overall with no element below 6.5 for nursing courses starting 2026 (6.5 overall, no element below 6.5, from 2027 entry)",
+      "region": "uk"
     },
     {
       "name": "BSc (Hons) Policing and Criminal Investigation",
@@ -340,7 +355,8 @@ window.EDUHUB_COURSES = {
       "duration": "Part-time: 3 years+ (online, flexible)",
       "tuition": "£7,140 per level x 3 levels (Levels 4-6) = £21,420 total (standard fee shown for UK-England); online fees vary by country tier — e.g. India shows £5,500 per level (£16,500 total). No academic year stated",
       "intakes": "October 2026",
-      "entrySummary": "Two A level subjects (or equivalent), plus grade C or above in three GCSE subjects (or equivalent); Access to HE / BTEC Extended Diploma also accepted; non-standard entry via work experience considered · IELTS 6.0 with no less than 5.5 in any element, or TOEFL iBT 90, or equivalent"
+      "entrySummary": "Two A level subjects (or equivalent), plus grade C or above in three GCSE subjects (or equivalent); Access to HE / BTEC Extended Diploma also accepted; non-standard entry via work experience considered · IELTS 6.0 with no less than 5.5 in any element, or TOEFL iBT 90, or equivalent",
+      "region": "uk"
     },
     {
       "name": "LLB (Hons) Law",
@@ -351,7 +367,8 @@ window.EDUHUB_COURSES = {
       "duration": "Part-time: 3 years+ (online, flexible)",
       "tuition": "£7,140 per level x 3 levels (Levels 4-6) = £21,420 total (standard online fee shown for UK-England); online fees vary by country tier — e.g. India shows £5,500 per level (£16,500 total). Blended on-campus route £9,525 per year. No academic year stated",
       "intakes": "September 2026; October 2026; February 2027",
-      "entrySummary": "Three A level subjects (or equivalent), plus grade C or above in four GCSE subjects including English (or equivalent), or a recognised Access Programme · IELTS 6.0 with no less than 5.5 in any element, or TOEFL iBT 80, or equivalent"
+      "entrySummary": "Three A level subjects (or equivalent), plus grade C or above in four GCSE subjects including English (or equivalent), or a recognised Access Programme · IELTS 6.0 with no less than 5.5 in any element, or TOEFL iBT 80, or equivalent",
+      "region": "uk"
     },
     {
       "name": "HND Qualifications",
@@ -360,7 +377,8 @@ window.EDUHUB_COURSES = {
       "mode": "On Campus",
       "note": null,
       "duration": "2 years full-time (college states: 'A Higher National Diploma (HND) will take two years full-time'; SCQF Level 8)",
-      "tuition": "£8,500 (international fee for 2026/27 full-time courses, including SQA fee) — flat college-wide rate, not HND-specific"
+      "tuition": "£8,500 (international fee for 2026/27 full-time courses, including SQA fee) — flat college-wide rate, not HND-specific",
+      "region": "uk"
     },
     {
       "name": "Diploma in Electrical Installations",
@@ -371,7 +389,8 @@ window.EDUHUB_COURSES = {
       "duration": "1 year full-time (MQF Level 3, 60 ECTS)",
       "tuition": "EUR 6,700 total course fee for non-EU students (MQF Level 3, 1-year courses, per MCAST non-EU fee schedule 2024/25); free for Maltese/EU nationals",
       "intakes": "October (non-EU application window is for courses commencing October 2026)",
-      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade) · Positive colour vision assessment clearance required"
+      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade) · Positive colour vision assessment clearance required",
+      "region": "europe"
     },
     {
       "name": "Diploma In Electrical Engineering",
@@ -382,7 +401,8 @@ window.EDUHUB_COURSES = {
       "duration": "1 year full-time (MQF Level 3, 60 ECTS) — applies to MCAST Level 3 engineering diplomas generally",
       "tuition": "EUR 6,700 total course fee for non-EU students (MQF Level 3, 1-year courses, per MCAST non-EU fee schedule 2024/25); free for Maltese/EU nationals",
       "intakes": "October",
-      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade)"
+      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade)",
+      "region": "europe"
     },
     {
       "name": "Diploma in Mechanical Engineering",
@@ -393,7 +413,8 @@ window.EDUHUB_COURSES = {
       "duration": "1 year full-time (MQF Level 3, 60 ECTS)",
       "tuition": "EUR 6,700 total course fee for non-EU students (MQF Level 3, 1-year courses, per MCAST non-EU fee schedule 2024/25); free for Maltese/EU nationals",
       "intakes": "October",
-      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade) · Maturity clause available for applicants 19+"
+      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade) · Maturity clause available for applicants 19+",
+      "region": "europe"
     },
     {
       "name": "Diploma in Air Conditioning (HVAC)",
@@ -404,7 +425,8 @@ window.EDUHUB_COURSES = {
       "duration": "1 year full-time (MQF Level 3, 60 ECTS)",
       "tuition": "EUR 6,700 total course fee for non-EU students (MQF Level 3, 1-year courses, per MCAST non-EU fee schedule 2024/25); free for Maltese/EU nationals",
       "intakes": "October",
-      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade) · Positive colour vision assessment clearance required"
+      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade) · Positive colour vision assessment clearance required",
+      "region": "europe"
     },
     {
       "name": "Diploma in Automotive Engineering",
@@ -415,7 +437,8 @@ window.EDUHUB_COURSES = {
       "duration": "1 year full-time (MQF Level 3, 60 ECTS) — applies to MCAST Level 3 automotive diplomas generally",
       "tuition": "EUR 6,700 total course fee for non-EU students (MQF Level 3, 1-year courses, per MCAST non-EU fee schedule 2024/25); free for Maltese/EU nationals",
       "intakes": "October",
-      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade)"
+      "entrySummary": "MCAST MQF Level 2 Foundation Certificate, or 2 subjects at SEC/SSC&P/SSQP (pass grade)",
+      "region": "europe"
     },
     {
       "name": "Civil Engineering (BSc)",
@@ -424,7 +447,8 @@ window.EDUHUB_COURSES = {
       "mode": "On Campus",
       "note": null,
       "duration": "4 years (240 ECTS)",
-      "tuition": "EUR 8,000 per year (Engineering faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee"
+      "tuition": "EUR 8,000 per year (Engineering faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee",
+      "region": "europe"
     },
     {
       "name": "Computer Engineering (BSc)",
@@ -433,7 +457,8 @@ window.EDUHUB_COURSES = {
       "mode": "On Campus",
       "note": null,
       "duration": "4 years (132 credits / 40 courses)",
-      "tuition": "EUR 8,000 per year (Engineering faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee"
+      "tuition": "EUR 8,000 per year (Engineering faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee",
+      "region": "europe"
     },
     {
       "name": "AI Engineering (BSc)",
@@ -441,7 +466,8 @@ window.EDUHUB_COURSES = {
       "location": "Kyrenia (Girne), North Cyprus (GAU main campus)",
       "mode": "On Campus",
       "note": null,
-      "tuition": "EUR 8,000 per year (Engineering faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee — assumes Engineering faculty; program page shows no figure"
+      "tuition": "EUR 8,000 per year (Engineering faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee — assumes Engineering faculty; program page shows no figure",
+      "region": "europe"
     },
     {
       "name": "Healthcare Management (BSc)",
@@ -450,14 +476,16 @@ window.EDUHUB_COURSES = {
       "mode": "On Campus",
       "note": null,
       "duration": "4 years",
-      "tuition": "EUR 8,000 per year (Health Sciences faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee"
+      "tuition": "EUR 8,000 per year (Health Sciences faculty rate, 2025-26 international tuition) + EUR 500 yearly registration and activity fee",
+      "region": "europe"
     },
     {
       "name": "Bachelor of Science in Artificial Intelligence",
       "awarding": "De Montfort University",
       "location": "Dubai, UAE",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "region": "uae"
     },
     {
       "name": "Bachelor of Arts in Fashion Marketing and Design",
@@ -468,7 +496,8 @@ window.EDUHUB_COURSES = {
       "duration": "Three years full-time",
       "tuition": "AED 63,614 (figure shown on official course page; page framing suggests annual course fee but per-year vs total not explicitly labelled in extraction - verify before publishing)",
       "intakes": "January, September",
-      "entrySummary": "A-Level CCD / IB 24 points / American HS Diploma 3.0 GPA + AP / CBSE 65% best four · IELTS Academic 6.0 (min 5.5 each band) or TOEFL iBT 72 or PTE 58"
+      "entrySummary": "A-Level CCD / IB 24 points / American HS Diploma 3.0 GPA + AP / CBSE 65% best four · IELTS Academic 6.0 (min 5.5 each band) or TOEFL iBT 72 or PTE 58",
+      "region": "uae"
     },
     {
       "name": "BA Business",
@@ -479,21 +508,24 @@ window.EDUHUB_COURSES = {
       "duration": "3 years full-time",
       "tuition": "EUR 5,951 per year (overseas students)",
       "intakes": "October 2026",
-      "entrySummary": "Leaving Certificate O6/H7 or higher in 5 subjects (incl. English & Maths) or equivalent · IELTS 6.0 (no band below 5.5)"
+      "entrySummary": "Leaving Certificate O6/H7 or higher in 5 subjects (incl. English & Maths) or equivalent · IELTS 6.0 (no band below 5.5)",
+      "region": "europe"
     },
     {
       "name": "Diploma in Business Administration",
       "awarding": "Pacific Link College",
       "location": "Canada",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "region": "canada"
     },
     {
       "name": "Diploma in Business Administration",
       "awarding": "York College of Applied Sciences",
       "location": "Canada",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "region": "canada"
     },
     {
       "name": "Diploma in Business Administration",
@@ -504,7 +536,8 @@ window.EDUHUB_COURSES = {
       "duration": "47 weeks (954 hours)",
       "tuition": "CAD 15,600 (international; fee year not stated on page)",
       "intakes": "Bi-monthly",
-      "entrySummary": "Ontario Secondary School Diploma or equivalent · OR 18+ years old and pass a qualifying test (Wonderlic, score 15)"
+      "entrySummary": "Ontario Secondary School Diploma or equivalent · OR 18+ years old and pass a qualifying test (Wonderlic, score 15)",
+      "region": "canada"
     },
     {
       "name": "Bachelors of Commerce",
@@ -515,7 +548,8 @@ window.EDUHUB_COURSES = {
       "duration": "4 years (40 courses / 120 credits); accelerated 3-year completion option",
       "tuition": "CAD 89,000 total programme (international, 2026 fees: $2,225 per course x 40); 2027 fees: $93,440 total",
       "intakes": "Fall, Winter, Spring, Summer",
-      "entrySummary": "Canadian Grade 12 diploma or equivalent with minimum C average (2.0 on 4.33 scale) · IELTS Academic 6.5 overall with minimum 6.0 in writing, or equivalent"
+      "entrySummary": "Canadian Grade 12 diploma or equivalent with minimum C average (2.0 on 4.33 scale) · IELTS Academic 6.5 overall with minimum 6.0 in writing, or equivalent",
+      "region": "canada"
     },
     {
       "name": "Bachelor of Arts in Business Communication",
@@ -526,7 +560,8 @@ window.EDUHUB_COURSES = {
       "duration": "4 years (40 courses / 120 credits)",
       "tuition": "CAD 89,000 total programme (international, 2026 fees: $2,225 per course x 40); 2027 fees: $93,440 total",
       "intakes": "Fall, Winter, Spring, Summer",
-      "entrySummary": "Canadian Grade 12 diploma or equivalent with overall average of C or better · IELTS Academic 6.5 overall with minimum 6.0 in writing, or equivalent"
+      "entrySummary": "Canadian Grade 12 diploma or equivalent with overall average of C or better · IELTS Academic 6.5 overall with minimum 6.0 in writing, or equivalent",
+      "region": "canada"
     },
     {
       "name": "BS Biomedical Sciences",
@@ -537,7 +572,8 @@ window.EDUHUB_COURSES = {
       "duration": "48 months (120 credits)",
       "tuition": "CAD 120,000 total programme (international: $1,000 per credit x 120 credits), as published on official tuition page Aug 2026 (fee year not stated)",
       "intakes": "Fall (September), Winter (January)",
-      "entrySummary": "Ontario Secondary School Diploma or equivalent, minimum 70% average on best 6 Grade 12 4U/4M courses · English language proficiency evidence if applicable"
+      "entrySummary": "Ontario Secondary School Diploma or equivalent, minimum 70% average on best 6 Grade 12 4U/4M courses · English language proficiency evidence if applicable",
+      "region": "canada"
     },
     {
       "name": "Bachelors Business Administration",
@@ -548,14 +584,16 @@ window.EDUHUB_COURSES = {
       "duration": "48 months (120 credits)",
       "tuition": "CAD 80,040 total programme (international: $667 per credit x 120 credits), as published on official tuition page Aug 2026 (fee year not stated)",
       "intakes": "Fall (September), Winter (January)",
-      "entrySummary": "OSSD or equivalent: six Grade 12 4U/4M courses incl. ENG4U and one 4U Math, minimum 70% average on best 6 · English language proficiency evidence if applicable"
+      "entrySummary": "OSSD or equivalent: six Grade 12 4U/4M courses incl. ENG4U and one 4U Math, minimum 70% average on best 6 · English language proficiency evidence if applicable",
+      "region": "canada"
     },
     {
       "name": "BA Business Top-up",
       "awarding": "IES Business School",
       "location": "Rouen, France (IES Normandie campus) — school identity confirmed",
       "mode": "On Campus",
-      "note": null
+      "note": null,
+      "region": "europe"
     },
     {
       "name": "BA (Hons) Comic and Concept Art",
@@ -564,7 +602,8 @@ window.EDUHUB_COURSES = {
       "mode": "On Campus",
       "note": null,
       "duration": "3 years; 4 years international route (integrated foundation)",
-      "entrySummary": "Direct entry: school-leaving certificate giving HE access (Abitur/IB/UK Level 3 equivalent); foundation route: age 17+, 11 years schooling · English: IELTS 6.0 (direct entry) / 5.0 (foundation)"
+      "entrySummary": "Direct entry: school-leaving certificate giving HE access (Abitur/IB/UK Level 3 equivalent); foundation route: age 17+, 11 years schooling · English: IELTS 6.0 (direct entry) / 5.0 (foundation)",
+      "region": "europe"
     },
     {
       "name": "BA (Hons) Game Design",
@@ -573,7 +612,8 @@ window.EDUHUB_COURSES = {
       "mode": "On Campus",
       "note": null,
       "duration": "3 years; 4 years international route (integrated foundation)",
-      "entrySummary": "Direct entry: school-leaving certificate giving HE access (Abitur/IB/UK Level 3 equivalent); Year 3 entry with HND/DipHE (UK Level 5) · English: IELTS 6.0 (direct/Year 3) / 5.0 (foundation)"
+      "entrySummary": "Direct entry: school-leaving certificate giving HE access (Abitur/IB/UK Level 3 equivalent); Year 3 entry with HND/DipHE (UK Level 5) · English: IELTS 6.0 (direct/Year 3) / 5.0 (foundation)",
+      "region": "europe"
     },
     {
       "name": "BA (Hons) Computer Science and Digitisation",
@@ -584,7 +624,8 @@ window.EDUHUB_COURSES = {
       "duration": "3 years; 4 years international route; Year 3 direct entry 1 year",
       "tuition": "EUR 10,425 per year (discounts up to 50% available)",
       "intakes": "February, October (intakes subject to change)",
-      "entrySummary": "Direct entry: Abitur/Fachhochschulreife/Matura/IB or UK Level 3 equivalent; Year 3 entry with HND/DipHE (UK Level 5) · English: IELTS 6.0 (direct/Year 3) / 5.0 (foundation)"
+      "entrySummary": "Direct entry: Abitur/Fachhochschulreife/Matura/IB or UK Level 3 equivalent; Year 3 entry with HND/DipHE (UK Level 5) · English: IELTS 6.0 (direct/Year 3) / 5.0 (foundation)",
+      "region": "europe"
     },
     {
       "name": "Bachelor of Science in Business Administration",
@@ -595,7 +636,8 @@ window.EDUHUB_COURSES = {
       "duration": "36 months typical; 120 semester credit hours",
       "tuition": "$515 per credit (rate listed on official page as of Aug 2026; academic year not stated)",
       "intakes": "Multiple starts per year; next start listed as September 8 (page viewed 2026-08-17)",
-      "entrySummary": "High school diploma, GED or equivalent · Capacity to succeed shown via prior ACT/SAT, prior college credit, or entrance testing; admissions interview"
+      "entrySummary": "High school diploma, GED or equivalent · Capacity to succeed shown via prior ACT/SAT, prior college credit, or entrance testing; admissions interview",
+      "region": "us"
     },
     {
       "name": "Bachelor of Arts in Psychology",
@@ -606,7 +648,8 @@ window.EDUHUB_COURSES = {
       "duration": "32 months average (8 semesters); 120 credits",
       "tuition": "$450 per credit (base tuition for 120 credits $54,000; rate listed on official page as of Aug 2026)",
       "intakes": "Multiple starts per year; next start listed as September 8 (page viewed 2026-08-17)",
-      "entrySummary": "High school diploma, GED or equivalent · Entrance testing or prior ACT/SAT scores/college credit; admissions interview"
+      "entrySummary": "High school diploma, GED or equivalent · Entrance testing or prior ACT/SAT scores/college credit; admissions interview",
+      "region": "us"
     },
     {
       "name": "Bachelor of Science in Computer Science",
@@ -615,7 +658,8 @@ window.EDUHUB_COURSES = {
       "mode": "On Campus",
       "note": null,
       "tuition": "$40,540/yr tuition + $1,000/yr university fee (traditional undergraduate 12-18 credits/semester, 2025-2026; same list rate applies to international students - international first-year total cost estimate $41,540 tuition on the international admissions page)",
-      "entrySummary": "International English proficiency: TOEFL iBT 61+ or IELTS 5.0 overall (no band below 5.0) or Duolingo 90+ · No specific GPA requirement published on international admissions page"
+      "entrySummary": "International English proficiency: TOEFL iBT 61+ or IELTS 5.0 overall (no band below 5.0) or Duolingo 90+ · No specific GPA requirement published on international admissions page",
+      "region": "us"
     },
     {
       "name": "BA in Supply Chain Management",
@@ -626,7 +670,8 @@ window.EDUHUB_COURSES = {
       "duration": "120 credit hours; 8-week courses, self-paced (no fixed years stated)",
       "tuition": "$275 per credit hour (adult undergraduate, stated as estimated 2023-2024 rate on programme page; university tuition page lists $300/credit for adult undergraduates fall 2025/spring 2026)",
       "intakes": "New sessions start every eight weeks, year-round",
-      "entrySummary": "Admission requirements not published on the programme page · International English proficiency (university-wide): TOEFL iBT 61+ or IELTS 5.0"
+      "entrySummary": "Admission requirements not published on the programme page · International English proficiency (university-wide): TOEFL iBT 61+ or IELTS 5.0",
+      "region": "us"
     },
     {
       "name": "BA in Animation",
@@ -637,7 +682,8 @@ window.EDUHUB_COURSES = {
       "duration": "4 years (average time to complete)",
       "tuition": "$33,360 per academic year flat fee, full-time 13-18 credit hours (2026-2027); part-time $500 per credit hour",
       "intakes": "Fall, spring and summer terms; rolling admissions",
-      "entrySummary": "Test-optional; competitive applicants have cumulative GPA 2.75+ on 4.0 scale, 19 units of academic credit · International: TOEFL iBT 80 or IELTS Academic 6.0 or Duolingo 110"
+      "entrySummary": "Test-optional; competitive applicants have cumulative GPA 2.75+ on 4.0 scale, 19 units of academic credit · International: TOEFL iBT 80 or IELTS Academic 6.0 or Duolingo 110",
+      "region": "us"
     },
     {
       "name": "BS Management Information System",
@@ -648,7 +694,8 @@ window.EDUHUB_COURSES = {
       "duration": "4 years (average); 120 credit hours (57 required core credits)",
       "tuition": "$33,360 per academic year flat fee, full-time 13-18 credit hours (2026-2027); part-time $500 per credit hour",
       "intakes": "Fall, spring and summer terms; rolling admissions",
-      "entrySummary": "Test-optional; competitive applicants have cumulative GPA 2.75+ on 4.0 scale · International: TOEFL iBT 80 or IELTS Academic 6.0 or Duolingo 110"
+      "entrySummary": "Test-optional; competitive applicants have cumulative GPA 2.75+ on 4.0 scale · International: TOEFL iBT 80 or IELTS Academic 6.0 or Duolingo 110",
+      "region": "us"
     },
     {
       "name": "BS Business Intelligence & Analytics",
@@ -658,7 +705,8 @@ window.EDUHUB_COURSES = {
       "note": "Contract Terminated",
       "duration": "120 credits (4-year bachelor's; years not explicitly stated on official page)",
       "tuition": "$19,420 per semester / $38,840 annually flat rate for 12-18 credit hours (2026-2027); $1,178 per credit hour below 12 credits",
-      "entrySummary": "International: TOEFL iBT 72 or IELTS 6.0 or Duolingo 95; official transcripts (foreign transcripts credential-evaluated) · Proof of secondary school graduation; certified financial support document; documents due at least 2 months before intended term"
+      "entrySummary": "International: TOEFL iBT 72 or IELTS 6.0 or Duolingo 95; official transcripts (foreign transcripts credential-evaluated) · Proof of secondary school graduation; certified financial support document; documents due at least 2 months before intended term",
+      "region": "us"
     },
     {
       "name": "BS Health Science",
@@ -668,7 +716,8 @@ window.EDUHUB_COURSES = {
       "note": "Contract Terminated",
       "duration": "120 credits (4-year bachelor's; years not explicitly stated on official page)",
       "tuition": "$19,420 per semester / $38,840 annually flat rate for 12-18 credit hours (2026-2027); $1,178 per credit hour below 12 credits",
-      "entrySummary": "International: TOEFL iBT 72 or IELTS 6.0 or Duolingo 95; official transcripts (foreign transcripts credential-evaluated) · Proof of secondary school graduation; certified financial support document; documents due at least 2 months before intended term"
+      "entrySummary": "International: TOEFL iBT 72 or IELTS 6.0 or Duolingo 95; official transcripts (foreign transcripts credential-evaluated) · Proof of secondary school graduation; certified financial support document; documents due at least 2 months before intended term",
+      "region": "us"
     }
   ],
 
@@ -732,6 +781,343 @@ window.EDUHUB_COURSES = {
           "Management Project Methods — research methods, project proposal development and ethics",
           "Strategic Management Project — strategic decision-making, implementation and leadership"
         ]}
+      ]
+    },
+
+    /* ── SP Jain London postgraduate programmes (spjain.ac.uk, extracted 2026-08-21) ──
+          and aivancity master's programmes (aivancity.ai, extracted 2026-08-21) ── */
+    {
+      "slug": "msc-global-business",
+      "region": "uk",
+      "name": "MSc Global Business",
+      "awarding": "SP Jain London School of Management",
+      "location": "London, UK (Term 3 in Dubai or London)",
+      "duration": "12 months (16 months with internship)",
+      "intakes": "October 2026",
+      "applicationFee": null,
+      "tuition": "UK £15,000 · International £12,000 per term, Terms 1–3 (October 2026 intake)",
+      "assessment": null,
+      "delivery": null,
+      "overview": "A 12-month intensive master's for recent graduates, extendable to 16 months with an optional global internship. Teaching takes place in London with the option of a final term in Dubai. Specialisations include Global Marketing Management, Supply Chain Management in a Digital World, Global Finance, Digital Transformation Management and Business Analytics.",
+      "entry": [
+        "Minimum 2.1 honours degree from a UK university or equivalent international qualification",
+        "Designed for graduates with 0–2 years of work experience",
+        "Assessment also considers aptitude test score and interview performance"
+      ],
+      "structure": null
+    },
+    {
+      "slug": "msc-applied-finance-wealth-management",
+      "region": "uk",
+      "name": "MSc in Applied Finance and Wealth Management",
+      "awarding": "SP Jain London School of Management",
+      "location": "London, UK (optional first term in Mumbai)",
+      "duration": "12 months full-time (16 months with optional internship)",
+      "intakes": "October 2026",
+      "applicationFee": null,
+      "tuition": "£25,000 total — £10,000 Semester 1 + £15,000 Semester 2 (October 2026 intake)",
+      "assessment": null,
+      "delivery": "Full-time",
+      "overview": "A 12-month full-time master's combining applied finance theory with wealth management practice, with an optional 4-month internship extending it to 16 months. The curriculum covers wealth planning, portfolio construction and investment management alongside FinTech, sustainable finance and data-driven decision-making.",
+      "entry": [
+        "Bachelor's degree"
+      ],
+      "structure": null
+    },
+    {
+      "slug": "mim-family-managed-business",
+      "region": "uk",
+      "name": "Masters of Family Managed Business (MFMB)",
+      "awarding": "SP Jain London School of Management",
+      "location": "London, UK — immersion weeks in Dubai and Singapore",
+      "duration": "12 months",
+      "intakes": null,
+      "applicationFee": null,
+      "tuition": "£25,000 — £10,000 Semester 1 + £15,000 Semester 2 (travel, accommodation and laptop excluded)",
+      "assessment": null,
+      "delivery": "Block classroom teaching combined with distance learning",
+      "overview": "A 12-month Masters in Management aimed at family business owners and entrepreneurs, combining block classroom teaching with distance learning applied to the student's own family business. Semester 1 is delivered in London; Semester 2 adds immersion weeks in Dubai and Singapore.",
+      "entry": [
+        "Undergraduate degree, normally upper second class (extensive experience considered)",
+        "Must be engaged or employed in a family business",
+        "IELTS 6.5 minimum, with at least 5.5 in each element"
+      ],
+      "structure": null
+    },
+    {
+      "slug": "global-mba",
+      "region": "uk",
+      "name": "Global MBA",
+      "awarding": "SP Jain London School of Management",
+      "location": "London, UK (Term 3 in Dubai or London)",
+      "duration": "12 months (16 months with internship)",
+      "intakes": "October 2026",
+      "applicationFee": null,
+      "tuition": "UK £20,000 · International £13,000 per term, Terms 1–3 (October 2026 intake)",
+      "assessment": null,
+      "delivery": null,
+      "overview": "A 12-month MBA for professionals with at least two years of work experience, extendable to 16 months with an integrated internship. Terms 1 and 2 are taught in London, with Term 3 in Dubai or London. Specialisations include Global Marketing Management, Supply Chain Management, Global Finance, Digital Transformation Management and Business Analytics.",
+      "entry": [
+        "Minimum 2.1 honours degree from a UK university or equivalent international qualification",
+        "Minimum of two years of relevant work experience"
+      ],
+      "structure": null
+    },
+    {
+      "slug": "executive-mba",
+      "region": "uk",
+      "name": "Executive MBA",
+      "awarding": "SP Jain London School of Management",
+      "location": "Online (virtual classroom) — week-long study tours to Dubai and Singapore",
+      "duration": "18 months",
+      "intakes": "September 2026",
+      "applicationFee": null,
+      "tuition": "£20,000 (September 2026 intake) — scholarships of up to 75% of tuition available",
+      "assessment": null,
+      "delivery": "Part-time, online — Engaged Learning Online (ELO) virtual classroom",
+      "overview": "An 18-month part-time MBA delivered in a virtual classroom using the school's Engaged Learning Online technology, aimed at experienced professionals. The programme includes week-long study tours to Dubai and Singapore and concludes with an individual project on a business issue of strategic significance.",
+      "entry": [
+        "Minimum 2.1 honours degree or equivalent (lower second considered with extensive relevant professional experience)",
+        "Minimum five years of relevant work experience"
+      ],
+      "structure": [
+        {
+          "stage": "Taught modules",
+          "modules": [
+            "Personal Effectiveness",
+            "Human Resource Management",
+            "Accounting",
+            "Marketing",
+            "Finance",
+            "Business Economics",
+            "Operations Management",
+            "Business Statistics",
+            "Research Methodologies",
+            "Negotiation",
+            "Leadership",
+            "Cross-Cultural Management",
+            "Corporate Governance",
+            "Sustainability",
+            "Ethics",
+            "Change Management",
+            "Strategic Management",
+            "Innovation and Entrepreneurship"
+          ]
+        },
+        {
+          "stage": "Final stage",
+          "modules": [
+            "Individual project investigating a business issue of strategic significance"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "msc-data-engineering-cloud-computing",
+      "region": "europe",
+      "name": "MSc Data Engineering & Cloud Computing",
+      "awarding": "aivancity School of AI & Data for Business & Society, Paris",
+      "location": "Paris-Villejuif, France",
+      "duration": "2 years (120 ECTS)",
+      "intakes": "November",
+      "applicationFee": "EUR 90 (initial training) · EUR 0 (work-study)",
+      "tuition": "EUR 12,500 per year (initial training) · EUR 0 on work-study (funded by the host company)",
+      "assessment": null,
+      "delivery": "Initial training or work-study; taught in English & French",
+      "overview": "A two-year, 120-ECTS master's on the Paris-Villejuif campus training data-engineering specialists across the full data lifecycle — acquisition, architecture, storage, pipelining, security and visualisation. Year 1 builds data-driven projects around centralised databases; Year 2 specialises in big-data processing with AWS, Azure, GCP and NoSQL, with one recognised industry certification per year.",
+      "entry": [
+        "Bachelor's, master's or doctorate in computer science, engineering, mathematics, statistics, physical sciences, bioinformatics or a related scientific field; programming and database knowledge required",
+        "Taught in English & French"
+      ],
+      "structure": [
+        {
+          "stage": "Year 1 (60 ECTS)",
+          "modules": [
+            "Data Analytics & Programming — data project modelling, databases, data analysis and visualisation",
+            "Distributed Data Systems — distributed algorithms, cloud environment with Azure",
+            "Data Computing — project management, cloud computing on AWS, machine learning",
+            "Data-Driven Strategy — web security, data laws and regulations"
+          ]
+        },
+        {
+          "stage": "Year 2 (60 ECTS)",
+          "modules": [
+            "Big Data Management — big data theory in Scala, HDFS & Spark in practice",
+            "Large-Scale Data Services — cloud engineering on GCP, data pipelines",
+            "Cloud Innovations — NoSQL databases, intelligent engineering, data security & cryptography",
+            "Cloud Data & Society — green computing, data ethics, data governance"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "msc-data-management",
+      "region": "europe",
+      "name": "Master of Science in Data Management",
+      "awarding": "aivancity School of AI & Data for Business & Society, Paris",
+      "location": "Paris-Villejuif & Nice, France",
+      "duration": "1 or 2 years",
+      "intakes": "October",
+      "applicationFee": "EUR 90 (initial training) · EUR 0 (work-study)",
+      "tuition": "EUR 12,500 per year (initial training) · EUR 0 on work-study (funded by the host company)",
+      "assessment": null,
+      "delivery": "Full-time or work-study (1 week at school / 3 weeks in company); taught in English & French",
+      "overview": "A one- or two-year master's offered at both the Paris-Villejuif and Nice campuses, focused on collecting, analysing, processing and modelling large and complex data sets. The curriculum spans data analysis, visualisation and reporting, programming, machine learning and business intelligence, alongside data ethics, privacy and project management, with preparation for certifications such as AWS, Azure, Google Analytics or Tableau.",
+      "entry": [
+        "Bachelor's, master's or doctorate from an institution of higher education, in any field of study",
+        "Work-study route restricted to EU citizens or international students who completed their first undergraduate year in France"
+      ],
+      "structure": [
+        {
+          "stage": "Year 1",
+          "modules": [
+            "Core curriculum — big data and AI, maths and statistics, data analysis and visualisation, programming, soft skills",
+            "Data Analysis — probability/statistics, Python, advanced Excel",
+            "Data Visualisation & Reporting — Power BI, data reporting, data protection law",
+            "Data for Business — project management, data-driven decision making, business intelligence"
+          ]
+        },
+        {
+          "stage": "Year 2",
+          "modules": [
+            "Advanced Data Analysis — processing, causal inference, big data & cloud, web data & APIs",
+            "Machine Learning — mathematics, fundamentals, project sprint",
+            "Ethics & Society — AI ethics, strategic data issues",
+            "Certification preparation — AWS, Azure, Google Analytics or Tableau"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "msc-ai-for-business",
+      "region": "europe",
+      "name": "Master of Science Artificial Intelligence for Business",
+      "awarding": "aivancity School of AI & Data for Business & Society, Paris",
+      "location": "Paris-Villejuif, France",
+      "duration": "12 months",
+      "intakes": "October",
+      "applicationFee": "EUR 90",
+      "tuition": "EUR 12,500 (initial training) · EUR 17,000 (vocational training)",
+      "assessment": null,
+      "delivery": "Part-time — two-day seminars on alternate Fridays and Saturdays; taught in French",
+      "overview": "A 12-month part-time master's delivered as 24 two-day seminars organised into four certificates, building skills from probabilistic modelling through machine learning and deep learning to generative AI, data visualisation and AI project management. Tuition includes preparation for Microsoft Azure AI or AWS Machine Learning certifications.",
+      "entry": [
+        "Bachelor's or master's degree in engineering, computer science, mathematics, statistics or physical sciences — or a business-school degree with strong mathematical aptitude and at least 3 years' professional experience in data/AI roles",
+        "Taught in French"
+      ],
+      "structure": [
+        {
+          "stage": "Certificate 1 — Quantitative Methods and Programming",
+          "modules": [
+            "Fundamentals of AI programming",
+            "Statistics",
+            "Programming for data science",
+            "Business intelligence",
+            "Big data & cloud computing",
+            "Linear algebra and calculus"
+          ]
+        },
+        {
+          "stage": "Certificate 2 — Data Science Modeling",
+          "modules": [
+            "Data-driven decision-making",
+            "Classic machine learning algorithms",
+            "Ethics, bias and limitations of machine learning"
+          ]
+        },
+        {
+          "stage": "Certificate 3 — Neural Networks & Deep Learning",
+          "modules": [
+            "Introduction to neural networks",
+            "Current deep-learning methods (CNNs, LLMs)",
+            "Responsible deployment of deep learning"
+          ]
+        },
+        {
+          "stage": "Certificate 4 — Deployment and Management of an AI Project",
+          "modules": [
+            "Generative AI and business applications",
+            "Structuring and managing an AI project",
+            "Trustworthy AI: fairness and explainability",
+            "Law and AI"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "msc-generative-agent-ai",
+      "region": "europe",
+      "name": "MSc in Generative and Agent-Based Artificial Intelligence",
+      "awarding": "aivancity School of AI & Data for Business & Society, Paris",
+      "location": "Paris-Villejuif, France",
+      "duration": "12 months (288 hours, 48 ECTS)",
+      "intakes": "October",
+      "applicationFee": "EUR 90",
+      "tuition": "EUR 12,500 (initial training) · EUR 17,000 (vocational training)",
+      "assessment": null,
+      "delivery": "Part-time — two-day seminars on alternate Fridays and Saturdays; taught in French",
+      "overview": "A 12-month part-time master's structured as four certificates delivered through 24 two-day seminars, training participants to design, integrate and manage solutions built on generative and agent-based AI — LLMs, diffusion models and transformers — while ensuring compliance with ethical, regulatory and organisational requirements. Includes a one-week study trip to Silicon Valley.",
+      "entry": [
+        "Bac+5 (master's level): a master's in computer science, a business/management master's with strong interest in IT, or corporate executives with a master's degree and at least 3 years' professional experience in IT",
+        "Taught in French"
+      ],
+      "structure": [
+        {
+          "stage": "Certificate 1 — No-Code Approaches to Generative and Agent-Based AI (72h, 12 ECTS)",
+          "modules": [
+            "Six 12-hour modules"
+          ]
+        },
+        {
+          "stage": "Certificate 2 — Development and Modeling of Generative and Agent-Based AI (72h, 12 ECTS)",
+          "modules": [
+            "Six 12-hour modules"
+          ]
+        },
+        {
+          "stage": "Certificate 3 — Enterprise Applications and Integration (72h, 12 ECTS)",
+          "modules": [
+            "Six 12-hour modules"
+          ]
+        },
+        {
+          "stage": "Certificate 4 — Ethics, Regulations and Governance (72h, 12 ECTS)",
+          "modules": [
+            "Six 12-hour modules"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "online-msc-applied-ai-data-science",
+      "region": "europe",
+      "name": "Online Master of Science in Applied AI and Data Science",
+      "awarding": "aivancity School of AI & Data for Business & Society, Paris",
+      "location": "100% online (optional Paris study trip)",
+      "duration": "12 months (8–12 hours per week)",
+      "intakes": "October 1, 2026",
+      "applicationFee": "EUR 50",
+      "tuition": "EUR 7,900 all-inclusive (early-bird EUR 6,900), including the Microsoft Azure AI Engineer certification exam",
+      "assessment": null,
+      "delivery": "100% online and asynchronous; taught in English, or a mix of French and English",
+      "overview": "A 12-month, fully online and asynchronous master's requiring roughly 8–12 hours of study per week, aimed at working professionals across functions such as marketing, finance, HR, IT and logistics. The curriculum progresses through six thematic blocks and concludes with an end-to-end capstone project.",
+      "entry": [
+        "Bachelor's or master's degree in a related field recommended — or a bachelor's degree with quantitative aptitude or significant professional experience",
+        "Application form plus a short presentation video"
+      ],
+      "structure": [
+        {
+          "stage": "Six progressive thematic blocks plus capstone",
+          "modules": [
+            "Data foundations",
+            "Mathematics for AI",
+            "Applied AI",
+            "Engineering & deployment",
+            "AI ethics and governance",
+            "AI for business strategy",
+            "End-to-end capstone project"
+          ]
+        }
       ]
     }
   ],

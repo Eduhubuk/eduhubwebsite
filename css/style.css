@@ -2739,3 +2739,29 @@ section { padding: var(--sp-7) var(--gutter); max-width: var(--maxw); margin-inl
    ═══════════════════════════════════════════════════════════ */
 .nav-links a[href="partners.html"] { color: var(--azure); font-weight: 700; }
 .mobile-menu nav > a[href="partners.html"] { color: var(--azure); }
+
+/* ═══════════════════════════════════════════════════════════
+   UG COURSES — study-location filter tabs (minimal pills;
+   All restores the full list; active pill in brand azure)
+   ═══════════════════════════════════════════════════════════ */
+.crs-tabs {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem;
+  max-width: var(--maxw); margin: 0 auto var(--sp-4);
+}
+.crs-tab {
+  font-family: var(--font-display); font-weight: 600; font-size: 0.92rem;
+  color: var(--text-dim);
+  padding: 0.55rem 1.4rem; border-radius: var(--r-pill);
+  border: 1.5px solid var(--line-strong);
+  background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(8px);
+  transition: color var(--t-fast), border-color var(--t-fast), background var(--t-fast), transform var(--t-fast) var(--ease-out);
+}
+.crs-tab:hover { color: var(--azure); border-color: var(--azure); transform: translateY(-1px); }
+.crs-tab.is-active {
+  color: #fff; background: var(--azure); border-color: var(--azure);
+  box-shadow: 0 10px 24px -12px rgba(21, 96, 189, 0.55);
+}
+@media (max-width: 560px) {
+  .crs-tabs { gap: 0.45rem; }
+  .crs-tab { padding: 0.5rem 1.1rem; font-size: 0.88rem; }
+}

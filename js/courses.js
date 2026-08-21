@@ -84,7 +84,7 @@ const metaRow = (label, value) =>
 document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
   const list = DATA[grid.dataset.level] || [];
   grid.innerHTML = list.map((c) => `
-    <article class="panel course-card">
+    <article class="panel course-card"${c.region ? ` data-region="${esc(c.region)}"` : ""}>
       <span class="crs-badge">Awarded by ${esc(c.awarding)}</span>
       <h3>${esc(c.name)}</h3>
       <ul class="course-meta">
@@ -112,6 +112,49 @@ document.querySelectorAll(".course-grid[data-level]").forEach((grid) => {
   revealOnce(grid.children, { opacity: 0, y: 30 },
     { opacity: 1, y: 0, duration: 0.75, stagger: 0.09, ease: "power3.out" }, grid);
 });
+
+/* ── UG study-location filter tabs — All is the initial state ── */
+(() => {
+  const tabs = gsap.utils.toArray(".crs-tab");
+  const grid = document.querySelector(".course-grid[data-level]");
+  if (!tabs.length || !grid) return;
+
+  let animating = false;
+  function filterTo(region) {
+    if (animating) return;
+    tabs.forEach((t) => {
+      const on = t.dataset.region === region;
+      t.classList.toggle("is-active", on);
+      t.setAttribute("aria-pressed", String(on));
+    });
+    const cards = gsap.utils.toArray(grid.children);
+    const show = cards.filter((c) => region === "all" || c.dataset.region === region);
+    const hide = cards.filter((c) => !show.includes(c));
+
+    if (prefersReduced) {
+      hide.forEach((c) => { c.style.display = "none"; });
+      show.forEach((c) => { c.style.display = ""; gsap.set(c, { opacity: 1, y: 0 }); });
+      ScrollTrigger.refresh();
+      return;
+    }
+    animating = true;
+    const reveal = () => {
+      hide.forEach((c) => { c.style.display = "none"; });
+      show.forEach((c) => { c.style.display = ""; });
+      gsap.fromTo(show, { opacity: 0, y: 14 }, {
+        opacity: 1, y: 0, duration: 0.45, stagger: 0.03, ease: "power2.out",
+        onComplete: () => { animating = false; ScrollTrigger.refresh(); },
+      });
+    };
+    if (hide.length) {
+      gsap.to(hide, { opacity: 0, y: 10, duration: 0.22, ease: "power2.in", onComplete: reveal });
+    } else {
+      reveal();
+    }
+  }
+
+  tabs.forEach((t) => t.addEventListener("click", () => filterTo(t.dataset.region)));
+})();
 
 /* ── short courses page ── */
 (() => {

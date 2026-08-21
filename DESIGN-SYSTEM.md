@@ -1,5 +1,16 @@
 # EDUCATION HUB · "DAYLIGHT" — Creative Direction & Design System (Iteration 3 · pre-launch refinement)
 
+## Chapter Twelve — courses expansion (hero, filters, SP Jain + aivancity PG)
+
+**UG hero.** Headline generalised to "Your Undergraduate Journey / Starts Here." (gradient on the second line); the sub line, meta description and title were updated to match — the old copy claimed everything was LAAT-delivered, which had been false since the 50-course catalogue landed.
+
+**UG study-location filter.** New `.crs-tabs` pill row between the hero and the grid: All (initial state, shows all 50) · UK · Canada · Europe · UAE · US. Every UG entry carries a `region` field in courses-data.js, classified by ACTUAL study location (17 UK, 16 Europe, 7 Canada, 2 UAE — both DMU Dubai, 8 US). Watch-out that was caught: SP Jain's BBA location string mentions Dubai as an exchange campus — location-substring matching alone misclassifies it; its study location is London → uk. Filtering is GSAP-animated (fade/slide out, staggered fade in, `ScrollTrigger.refresh()` on completion), instant under reduced motion, with an `animating` guard against double-clicks. Active pill = solid azure.
+
+**PG catalogue.** Ten programmes added as full detail-capable entries (official-site data, extracted 2026-08-21): five SP Jain London (MSc Global Business, MSc Applied Finance & Wealth Management, MFMB/MiM, Global MBA, Executive MBA — spjain.ac.uk) and five aivancity master's (Data Engineering & Cloud Computing, Data Management, AI for Business, Generative & Agent-Based AI, Online Applied AI & Data Science — aivancity.ai). Fees quoted exactly as each page states them (per-term for SP Jain, initial/vocational split for aivancity); MFMB intake "coming soon" → null; two aivancity programmes are taught in French — stated on the cards. PG hero sub/title generalised for the same accuracy reason as UG. PG page: 12 cards, all Know More.
+
+**Verified.** 1280 + 375: filter cycle All→UK(17)→Canada(7)→Europe(16)→UAE(2)→US(8)→All(50); tabs fit at 375; 12 PG cards with detail pages ("All postgraduate courses" shortcut correct); console clean, no overflow.
+
+
 ## Chapter Eleven — final polish pass
 
 **UG card parity.** All 40 Excel-derived cards were enriched from official institution websites (aru.ac.uk, canterbury.ac.uk, arden.ac.uk, cityofglasgowcollege.ac.uk, mcast.edu.mt, gau.edu.tr, berlinsbi.com, ucanwest.ca, unfc.ca, thecanadiancollege.ca, dmu.ac.uk, herzing.edu, avila.edu, webster.edu, cuchicago.edu, ibat.ie) — location, duration, international tuition, intakes and an entry summary wherever the official page states them; the renderer gained an "Entry" meta row. 34/40 now match the manually built cards' level of detail. Six stay minimal because the programme verifiably does not exist or the institution could not be confirmed (ARU online Business Top-up, CCCU BA English Language & Communication, DMU Dubai BSc AI, Pacific Link College, York College of Applied Sciences, IES Business School top-up) — kept per the client's no-removal instruction and flagged to them.
