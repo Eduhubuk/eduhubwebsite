@@ -147,9 +147,10 @@ if (!prefersReduced) {
       return;
     }
 
-    /* No backend on a static site: hand the note to the approved inbox.
-       Replace this with a real form endpoint when one exists (email sending
-       is explicitly deferred until the site moves to the client's hosting).
+    /* Sending: try the serverless endpoint first (/api/send-enquiry —
+       live once RESEND_API_KEY is configured on the hosting account).
+       If it isn't configured or fails, fall back to the original
+       mailto: behaviour so the form never silently breaks.
        Routing/labels come from data attributes on the <form>:
        data-recipient · data-enquiry · data-subject · data-source */
     const get = (n) => (form.elements[n] ? form.elements[n].value.trim() : "");
@@ -173,15 +174,48 @@ if (!prefersReduced) {
       `Submitted: ${new Date().toUTCString()}`,
     ].filter((v) => v !== null).join("\n");
 
-    status.classList.remove("is-error");
-    status.textContent = "Opening your email app so you can send this to us…";
-    window.location.href =
-      `mailto:${recipient}?subject=${encodeURIComponent((form.dataset.subject || "Website enquiry") + " — " + get("name"))}` +
-      `&body=${encodeURIComponent(body)}`;
+    const subject = (form.dataset.subject || "Website enquiry") + " — " + get("name");
+    const showStatus = (msg, isError) => {
+      status.classList.toggle("is-error", !!isError);
+      status.textContent = msg;
+      if (!prefersReduced) {
+        gsap.fromTo(status, { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" });
+      }
+    };
+    const mailtoFallback = () => {
+      showStatus("Opening your email app so you can send this to us…");
+      window.location.href =
+        `mailto:${recipient}?subject=${encodeURIComponent(subject)}` +
+        `&body=${encodeURIComponent(body)}`;
+    };
 
-    if (!prefersReduced) {
-      gsap.fromTo(status, { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" });
-    }
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    showStatus("Sending your enquiry…");
+
+    fetch("/api/send-enquiry", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ recipient, subject, body, replyTo: get("email") }),
+    })
+      .then((r) => {
+        if (r.ok) {
+          showStatus("Thank you. Your enquiry has been received. Our team will get back to you shortly.");
+          form.reset();
+          form.querySelectorAll(".field").forEach((f) => f.classList.remove("has-value"));
+          return;
+        }
+        /* 502 = the backend exists and the send genuinely failed → honest
+           error, allow retry. Anything else (404 = no backend on this
+           hosting, 503 = email not configured yet) → mailto keeps working. */
+        if (r.status === 502) {
+          showStatus("Sorry — your enquiry could not be sent. Please try again, or email us directly at " + recipient + ".", true);
+          return;
+        }
+        mailtoFallback();
+      })
+      .catch(() => { mailtoFallback(); })
+      .finally(() => { submitBtn.disabled = false; });
   });
 })();
 
