@@ -64,7 +64,9 @@ module.exports = async (req, res) => {
     if (!r.ok) {
       const detail = await r.text().catch(() => "");
       console.error("resend-error", r.status, detail.slice(0, 500));
-      return res.status(502).json({ ok: false, error: "send-failed" });
+      /* providerStatus lets us distinguish a bad key (401) from an
+         unverified sender domain (403) etc. without exposing details */
+      return res.status(502).json({ ok: false, error: "send-failed", providerStatus: r.status });
     }
     return res.status(200).json({ ok: true });
   } catch (err) {
