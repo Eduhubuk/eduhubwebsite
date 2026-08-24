@@ -327,7 +327,7 @@ if (finePointer && !prefersReduced) {
 
 /* ── gentle reveals for everything that simply arrives ── */
 if (!prefersReduced) {
-  gsap.utils.toArray(".section-head, .panel, .map-canvas, .map-detail, .belief > *").forEach((el) => {
+  gsap.utils.toArray(".section-head, .panel, .map-canvas, .map-detail, .belief > *, .lm-prose > *, .lm-sub, .lm-sub-note, .lm-sign").forEach((el) => {
     gsap.from(el, {
       opacity: 0, y: 30, duration: 0.8, ease: "power3.out",
       scrollTrigger: { trigger: el, start: "top 86%", toggleActions: "play none none none" },

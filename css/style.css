@@ -2765,3 +2765,34 @@ section { padding: var(--sp-7) var(--gutter); max-width: var(--maxw); margin-inl
   .crs-tabs { gap: 0.45rem; }
   .crs-tab { padding: 0.5rem 1.1rem; font-size: 0.88rem; }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   ABOUT — "A Message from Leadership" (client-supplied copy,
+   verbatim; reuses section-head, panel/iw-card and type system)
+   ═══════════════════════════════════════════════════════════ */
+.lm-prose { max-width: 62ch; display: grid; gap: 1.1rem; }
+.lm-prose p { color: var(--text-dim); font-weight: 500; line-height: 1.75; }
+.lm-lede {
+  font-family: var(--font-display); font-weight: 500;
+  font-size: clamp(1.15rem, 1rem + 0.7vw, 1.55rem);
+  color: var(--navy-900) !important; line-height: 1.5 !important;
+}
+.lm-pull {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(1.3rem, 1.1rem + 1vw, 1.9rem);
+  color: var(--navy-900) !important; line-height: 1.35 !important;
+}
+.lm-sub {
+  font-family: var(--font-display); font-weight: 700; color: var(--navy-900);
+  font-size: clamp(1.3rem, 1.05rem + 0.9vw, 1.9rem); letter-spacing: -0.02em;
+  margin-top: var(--sp-5);
+}
+.lm-sub-note { color: var(--text-dim); font-weight: 500; margin: 0.5rem 0 var(--sp-3); }
+.lm-grid { margin-bottom: var(--sp-5); }
+.lm-sign { margin-top: var(--sp-4); padding-top: var(--sp-3); border-top: 1px solid var(--line); width: fit-content; }
+.lm-sign .lm-name {
+  font-family: var(--font-display); font-weight: 700; color: var(--navy-900);
+  font-size: 1.25rem; letter-spacing: -0.01em;
+}
+.lm-sign .lm-role { color: var(--azure); font-weight: 600; font-size: 0.95rem; margin-top: 0.15rem; }
+.lm-sign .lm-org { color: var(--text-dim); font-weight: 500; font-size: 0.9rem; }

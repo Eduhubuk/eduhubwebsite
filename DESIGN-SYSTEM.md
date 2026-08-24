@@ -1,5 +1,10 @@
 # EDUCATION HUB · "DAYLIGHT" — Creative Direction & Design System (Iteration 3 · pre-launch refinement)
 
+## Chapter Thirteen — a message from leadership (About)
+
+The long-missing leadership content arrived from the client, attributed at last: Pawan Bhatia, Chief Partnerships Director. Added to About between Chapter Six (Our Belief) and the CTA as `.leadership` — client copy verbatim: section-head ("A Message from Leadership" / "Building the Future of Global Education."), a 62ch prose column with a display-face lede and a gradient pull-line ("We are building a global education platform."), the three commitment principles (Access / Trust / Outcomes) on the existing `.iw-card` panels, and a bordered signature block. Reveals ride the page's existing generic selector (extended with the `.lm-*` elements). Verified 1280 + 375, no overflow, cards collapse to one column on mobile.
+
+
 ## Chapter Twelve — courses expansion (hero, filters, SP Jain + aivancity PG)
 
 **UG hero.** Headline generalised to "Your Undergraduate Journey / Starts Here." (gradient on the second line); the sub line, meta description and title were updated to match — the old copy claimed everything was LAAT-delivered, which had been false since the 50-course catalogue landed.
